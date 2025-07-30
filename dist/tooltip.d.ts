@@ -1,0 +1,35 @@
+import * as React from 'react';
+import type { DataAttributes, TrackingEvent } from './utils/types';
+type Position = 'top' | 'bottom' | 'left' | 'right';
+type Props = {
+    children?: React.ReactNode;
+    extra?: React.ReactNode;
+    description?: string;
+    target: React.ReactNode;
+    targetStyle?: React.CSSProperties;
+    title?: string;
+    position?: Position;
+    width?: number;
+    delay?: boolean;
+    dataAttributes?: DataAttributes;
+    centerContent?: boolean;
+    open?: boolean;
+};
+type BaseTooltipProps = {
+    content?: React.ReactNode;
+    target: React.ReactNode;
+    targetStyle?: React.CSSProperties;
+    position?: Position;
+    width?: number;
+    delay?: boolean;
+    dataAttributes?: DataAttributes;
+    centerContent?: boolean;
+    open?: boolean;
+    hasPointerInteractionOnly?: boolean;
+    onClose?: () => void;
+    closeButtonLabel?: string;
+    trackingEvent?: TrackingEvent | ReadonlyArray<TrackingEvent>;
+};
+export declare const BaseTooltip: ({ content, target, targetStyle, width, position, dataAttributes, delay, centerContent, open, onClose, closeButtonLabel, hasPointerInteractionOnly, trackingEvent, }: BaseTooltipProps) => JSX.Element;
+declare const Tooltip: ({ centerContent, extra, children, dataAttributes, title, description, ...props }: Props) => JSX.Element;
+export default Tooltip;

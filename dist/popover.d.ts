@@ -1,0 +1,21 @@
+import * as React from 'react';
+import type { TrackingEvent, DataAttributes } from './utils/types';
+type Position = 'top' | 'bottom' | 'left' | 'right';
+type Props = {
+    description?: string;
+    target: React.ReactNode;
+    targetStyle?: React.CSSProperties;
+    title?: string;
+    asset?: React.ReactNode;
+    onClose?: () => void;
+    closeButtonLabel?: string;
+    position?: Position;
+    width?: number;
+    trackingEvent?: TrackingEvent | ReadonlyArray<TrackingEvent>;
+    open?: boolean;
+    children?: React.ReactNode;
+    extra?: React.ReactNode;
+    dataAttributes?: DataAttributes;
+};
+declare const Popover: ({ open, extra, children, onClose, closeButtonLabel, dataAttributes, trackingEvent, title, description, asset, ...props }: Props) => JSX.Element;
+export default Popover;

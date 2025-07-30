@@ -1,0 +1,7 @@
+export declare const timerWrapper: string;
+export declare const inlineText: string;
+export declare const unitContainer: string;
+export declare const shortLabelText: string;
+export declare const timerDisplayValue: string;
+export declare const boxedTimerDisplayValue: string;
+export declare const boxedTimerValueContainer: Record<"default" | "inverse" | "alternative" | "media", string>;

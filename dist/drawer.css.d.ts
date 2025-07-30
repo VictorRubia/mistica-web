@@ -1,0 +1,11 @@
+export declare const ANIMATION_DURATION_MS = 350;
+export declare const container: string;
+export declare const drawer: string;
+export declare const titleContainer: string;
+export declare const scrollableSection: string;
+export declare const open: string;
+export declare const closed: string;
+export declare const overlay: string;
+export declare const overlayClosed: string;
+export declare const overlayOpen: string;
+export declare const closeButtonContainer: string;

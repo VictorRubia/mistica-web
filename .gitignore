@@ -1,5 +1,5 @@
-dist/
-dist-es/
+# dist/
+# dist-es/
 dist-ts/
 coverage/
 .directory

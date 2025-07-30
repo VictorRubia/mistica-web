@@ -1,0 +1,135 @@
+"use client";
+function _define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function _object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            _define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+function ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        if (enumerableOnly) {
+            symbols = symbols.filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+            });
+        }
+        keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function _object_spread_props(target, source) {
+    source = source != null ? source : {};
+    if (Object.getOwnPropertyDescriptors) {
+        Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+        ownKeys(Object(source)).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+function _object_without_properties(source, excluded) {
+    if (source == null) return {};
+    var target = _object_without_properties_loose(source, excluded);
+    var key, i;
+    if (Object.getOwnPropertySymbols) {
+        var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+        for(i = 0; i < sourceSymbolKeys.length; i++){
+            key = sourceSymbolKeys[i];
+            if (excluded.indexOf(key) >= 0) continue;
+            if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+            target[key] = source[key];
+        }
+    }
+    return target;
+}
+function _object_without_properties_loose(source, excluded) {
+    if (source == null) return {};
+    var target = {};
+    var sourceKeys = Object.keys(source);
+    var key, i;
+    for(i = 0; i < sourceKeys.length; i++){
+        key = sourceKeys[i];
+        if (excluded.indexOf(key) >= 0) continue;
+        target[key] = source[key];
+    }
+    return target;
+}
+import { jsxs as l, jsx as r } from "react/jsx-runtime";
+import { useTheme as h } from "../../hooks.js";
+import { useIsInverseOrMediaVariant as c } from "../../theme-variant-context.js";
+import { vars as s } from "../../skins/skin-contract.css-mistica.js";
+const m = (_param)=>{
+    var { color: a, size: e = 24 } = _param, t = _object_without_properties(_param, [
+        "color",
+        "size"
+    ]);
+    const n = c(), o = a !== null && a !== void 0 ? a : n ? s.colors.inverse : s.colors.neutralHigh, { skinName: i } = h();
+    return i.match(/^o2-new/i) ? /* @__PURE__ */ l("svg", _object_spread_props(_object_spread({
+        width: e,
+        height: e,
+        viewBox: "0 0 24 24",
+        role: "presentation"
+    }, t), {
+        children: [
+            /* @__PURE__ */ r("path", {
+                fill: o,
+                d: "M6.852 7.864 12 13.012l3.36-3.36a.72.72 0 0 0 0-1.012.72.72 0 0 0-1.012 0L12 10.988 7.864 6.852a.72.72 0 0 0-1.012 0 .72.72 0 0 0 0 1.012"
+            }),
+            /* @__PURE__ */ r("path", {
+                fill: o,
+                d: "M12 22C6.484 22 2 17.516 2 12S6.484 2 12 2s10 4.484 10 10-4.484 10-10 10m0-18.576c-4.728 0-8.576 3.848-8.576 8.576S7.272 20.576 12 20.576s8.576-3.848 8.576-8.576S16.728 3.424 12 3.424"
+            })
+        ]
+    })) : i.match(/^o2/i) ? /* @__PURE__ */ l("svg", _object_spread_props(_object_spread({
+        width: e,
+        height: e,
+        viewBox: "0 0 24 24",
+        role: "presentation"
+    }, t), {
+        children: [
+            /* @__PURE__ */ r("path", {
+                fill: o,
+                d: "M6.852 7.864 12 13.012l3.36-3.36a.72.72 0 0 0 0-1.012.72.72 0 0 0-1.012 0L12 10.988 7.864 6.852a.72.72 0 0 0-1.012 0 .72.72 0 0 0 0 1.012"
+            }),
+            /* @__PURE__ */ r("path", {
+                fill: o,
+                d: "M12 22C6.484 22 2 17.516 2 12S6.484 2 12 2s10 4.484 10 10-4.484 10-10 10m0-18.576c-4.728 0-8.576 3.848-8.576 8.576S7.272 20.576 12 20.576s8.576-3.848 8.576-8.576S16.728 3.424 12 3.424"
+            })
+        ]
+    })) : /* @__PURE__ */ r("svg", _object_spread_props(_object_spread({
+        width: e,
+        height: e,
+        viewBox: "0 0 24 24",
+        role: "presentation"
+    }, t), {
+        children: /* @__PURE__ */ r("path", {
+            fill: o,
+            d: "M11.995 2.155c6.219 0 9.846 3.14 9.846 9.846s-3.627 9.84-9.846 9.84c-6.218 0-9.84-3.134-9.84-9.84s3.622-9.846 9.84-9.846m0 18.457c5.799 0 8.617-2.818 8.617-8.611 0-5.798-2.818-8.616-8.617-8.616-5.792 0-8.61 2.818-8.61 8.616 0 5.793 2.818 8.61 8.61 8.61m3.468-5.745-2.849-2.852.003-3.846a.616.616 0 1 0-1.232 0v4.1c0 .163.064.32.179.435l3.062 3.062a.61.61 0 0 0 .868-.031.613.613 0 0 0-.031-.868"
+        })
+    }));
+}, g = m;
+export { g as default };

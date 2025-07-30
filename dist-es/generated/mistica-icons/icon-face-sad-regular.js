@@ -1,0 +1,139 @@
+"use client";
+function _define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function _object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            _define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+function ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        if (enumerableOnly) {
+            symbols = symbols.filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+            });
+        }
+        keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function _object_spread_props(target, source) {
+    source = source != null ? source : {};
+    if (Object.getOwnPropertyDescriptors) {
+        Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+        ownKeys(Object(source)).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+function _object_without_properties(source, excluded) {
+    if (source == null) return {};
+    var target = _object_without_properties_loose(source, excluded);
+    var key, i;
+    if (Object.getOwnPropertySymbols) {
+        var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+        for(i = 0; i < sourceSymbolKeys.length; i++){
+            key = sourceSymbolKeys[i];
+            if (excluded.indexOf(key) >= 0) continue;
+            if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+            target[key] = source[key];
+        }
+    }
+    return target;
+}
+function _object_without_properties_loose(source, excluded) {
+    if (source == null) return {};
+    var target = {};
+    var sourceKeys = Object.keys(source);
+    var key, i;
+    for(i = 0; i < sourceKeys.length; i++){
+        key = sourceKeys[i];
+        if (excluded.indexOf(key) >= 0) continue;
+        target[key] = source[key];
+    }
+    return target;
+}
+import { jsx as a, jsxs as s } from "react/jsx-runtime";
+import { useTheme as n } from "../../hooks.js";
+import { useIsInverseOrMediaVariant as m } from "../../theme-variant-context.js";
+import { vars as i } from "../../skins/skin-contract.css-mistica.js";
+const h = (_param)=>{
+    var { color: o, size: e = 24 } = _param, r = _object_without_properties(_param, [
+        "color",
+        "size"
+    ]);
+    const l = m(), c = o !== null && o !== void 0 ? o : l ? i.colors.inverse : i.colors.neutralHigh, { skinName: t } = n();
+    return t.match(/^vivo-new/i) ? /* @__PURE__ */ a("svg", _object_spread_props(_object_spread({
+        width: e,
+        height: e,
+        viewBox: "0 0 24 24",
+        role: "presentation"
+    }, r), {
+        children: /* @__PURE__ */ a("path", {
+            fill: c,
+            d: "M12 2c5.519 0 10 4.481 10 10s-4.481 10-10 10S2 17.519 2 12 6.48 2 12 2m0 1.334c-4.782 0-8.665 3.883-8.665 8.666S7.218 20.666 12 20.666s8.665-3.883 8.665-8.666S16.782 3.334 12 3.334m4.007 4.846a1.336 1.336 0 1 1-.002 2.671 1.336 1.336 0 0 1 .002-2.671m-7.654 7.447a.666.666 0 1 1-1.255-.454s.92-2.739 4.917-2.739c4.03 0 4.89 2.751 4.89 2.751a.667.667 0 1 1-1.263.43s-.704-1.846-3.627-1.846c-2.917 0-3.662 1.858-3.662 1.858m-.36-7.447a1.336 1.336 0 1 1-.002 2.672 1.336 1.336 0 0 1 .003-2.672"
+        })
+    })) : t.match(/^blau/i) ? /* @__PURE__ */ a("svg", _object_spread_props(_object_spread({
+        width: e,
+        height: e,
+        viewBox: "0 0 24 24",
+        role: "presentation"
+    }, r), {
+        children: /* @__PURE__ */ a("path", {
+            fill: c,
+            d: "M12 2c5.519 0 10 4.481 10 10s-4.481 10-10 10S2 17.519 2 12 6.48 2 12 2m0 1.334c-4.782 0-8.665 3.883-8.665 8.666S7.218 20.666 12 20.666s8.665-3.883 8.665-8.666S16.782 3.334 12 3.334m4.007 4.846a1.336 1.336 0 1 1-.002 2.671 1.336 1.336 0 0 1 .002-2.671m-7.654 7.447a.666.666 0 1 1-1.255-.454s.92-2.739 4.917-2.739c4.03 0 4.89 2.751 4.89 2.751a.667.667 0 1 1-1.263.43s-.704-1.846-3.627-1.846c-2.917 0-3.662 1.858-3.662 1.858m-.36-7.447a1.336 1.336 0 1 1-.002 2.672 1.336 1.336 0 0 1 .003-2.672"
+        })
+    })) : t.match(/^o2-new/i) ? /* @__PURE__ */ s("svg", _object_spread_props(_object_spread({
+        width: e,
+        height: e,
+        viewBox: "0 0 24 24",
+        role: "presentation"
+    }, r), {
+        children: [
+            /* @__PURE__ */ a("path", {
+                fill: c,
+                d: "M12 22C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10m0-18.75c-4.825 0-8.75 3.925-8.75 8.75s3.925 8.75 8.75 8.75 8.75-3.925 8.75-8.75S16.825 3.25 12 3.25m-3.393 5a.982.982 0 1 0-.001 1.963.982.982 0 0 0 .001-1.963m6.697 0a.982.982 0 1 0-.002 1.963.982.982 0 0 0 .002-1.963"
+            }),
+            /* @__PURE__ */ a("path", {
+                fill: c,
+                d: "M7.268 16.08a.625.625 0 0 0 .81-.344c.033-.073.264-.555.78-1.024.58-.527 1.558-1.087 3.142-1.087s2.562.56 3.142 1.088c.31.282.608.631.778 1.02l.001.003a.625.625 0 0 0 1.16-.468l-.002-.004a3.3 3.3 0 0 0-.262-.489 4.9 4.9 0 0 0-.834-.988c-.795-.722-2.067-1.412-3.983-1.412s-3.188.69-3.983 1.412a4.9 4.9 0 0 0-.834.988 3 3 0 0 0-.262.49.635.635 0 0 0 .347.815m9.79-.861.02.046zm-1.137.517v-.002l-.001-.001z"
+            })
+        ]
+    })) : /* @__PURE__ */ a("svg", _object_spread_props(_object_spread({
+        width: e,
+        height: e,
+        viewBox: "0 0 24 24",
+        role: "presentation"
+    }, r), {
+        children: /* @__PURE__ */ a("path", {
+            fill: c,
+            d: "M21.841 12.001c0-6.706-3.627-9.846-9.846-9.846-6.218 0-9.84 3.14-9.84 9.846s3.622 9.84 9.84 9.84c6.219 0 9.846-3.134 9.846-9.84m-9.846 8.61c-5.792 0-8.61-2.817-8.61-8.61 0-5.798 2.818-8.616 8.61-8.616 5.799 0 8.617 2.82 8.617 8.616 0 5.793-2.821 8.61-8.617 8.61m.09-7.041c3.714.039 5.894 2.414 5.986 2.515a.615.615 0 0 1-.913.823l-.003-.002c-.08-.085-1.977-2.074-5.1-2.107h-.03c-.328 0-3.33.004-5.178 2.07a.616.616 0 0 1-.919-.818c2.333-2.616 6.003-2.487 6.157-2.481m-3.073-3.023c-.356 0-.652-.112-.86-.322-.204-.207-.305-.493-.305-.846 0-.723.448-1.17 1.165-1.17.72 0 1.165.447 1.165 1.17 0 .353-.103.639-.305.846-.207.21-.504.322-.86.322m5.112-.322c.207.21.504.322.86.322s.653-.112.857-.322c.205-.207.308-.493.308-.846 0-.723-.445-1.17-1.165-1.17-.717 0-1.165.447-1.165 1.17 0 .35.1.636.305.846"
+        })
+    }));
+}, g = h;
+export { g as default };

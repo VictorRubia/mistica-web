@@ -1,0 +1,35 @@
+export declare const vars: {
+    width: `var(--${string})` | `var(--${string}, ${string})` | `var(--${string}, ${number})`;
+    height: `var(--${string})` | `var(--${string}, ${string})` | `var(--${string}, ${number})`;
+    minHeight: `var(--${string})` | `var(--${string}, ${string})` | `var(--${string}, ${number})`;
+    maxWidth: `var(--${string})` | `var(--${string}, ${string})` | `var(--${string}, ${number})`;
+    minWidth: `var(--${string})` | `var(--${string}, ${string})` | `var(--${string}, ${number})`;
+    mobile: {
+        width: `var(--${string})` | `var(--${string}, ${string})` | `var(--${string}, ${number})`;
+        height: `var(--${string})` | `var(--${string}, ${string})` | `var(--${string}, ${number})`;
+        minHeight: `var(--${string})` | `var(--${string}, ${string})` | `var(--${string}, ${number})`;
+        maxWidth: `var(--${string})` | `var(--${string}, ${string})` | `var(--${string}, ${number})`;
+        minWidth: `var(--${string})` | `var(--${string}, ${string})` | `var(--${string}, ${number})`;
+    };
+    tablet: {
+        width: `var(--${string})` | `var(--${string}, ${string})` | `var(--${string}, ${number})`;
+        height: `var(--${string})` | `var(--${string}, ${string})` | `var(--${string}, ${number})`;
+        minHeight: `var(--${string})` | `var(--${string}, ${string})` | `var(--${string}, ${number})`;
+        maxWidth: `var(--${string})` | `var(--${string}, ${string})` | `var(--${string}, ${number})`;
+        minWidth: `var(--${string})` | `var(--${string}, ${string})` | `var(--${string}, ${number})`;
+    };
+    desktop: {
+        width: `var(--${string})` | `var(--${string}, ${string})` | `var(--${string}, ${number})`;
+        height: `var(--${string})` | `var(--${string}, ${string})` | `var(--${string}, ${number})`;
+        minHeight: `var(--${string})` | `var(--${string}, ${string})` | `var(--${string}, ${number})`;
+        maxWidth: `var(--${string})` | `var(--${string}, ${string})` | `var(--${string}, ${number})`;
+        minWidth: `var(--${string})` | `var(--${string}, ${string})` | `var(--${string}, ${number})`;
+    };
+    background: `var(--${string})` | `var(--${string}, ${string})` | `var(--${string}, ${number})`;
+    borderRadius: `var(--${string})` | `var(--${string}, ${string})` | `var(--${string}, ${number})`;
+};
+export declare const boxed: string;
+export declare const overflowHidden: string;
+export declare const boxBorder: string;
+export declare const desktopOnly: string;
+export declare const noBorder: string;
