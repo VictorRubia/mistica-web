@@ -2963,6 +2963,79 @@ const navigationBarSnippets = [
   }
 />`,
     },
+    {
+        group: 'NavigationBar',
+        name: 'MainNavigationBar with user menu dropdown',
+        code: `
+<MainNavigationBar
+  sections={[
+    {
+      title: "Inicio",
+      onPress: () => setState("index", 0),
+    },
+    {
+      title: "Mi cuenta",
+      onPress: () => setState("index", 1),
+    },
+    {
+      title: "Explorar",
+      onPress: () => setState("index", 2),
+    },
+  ]}
+  selectedIndex={getState("index", 0)}
+  right={
+    <NavigationBarActionGroup>
+      <Menu
+        position="right"
+        width={280}
+        renderTarget={({ref, onPress, isMenuOpen}) => (
+          <NavigationBarAction
+            ref={ref}
+            onPress={onPress}
+            aria-label="Menú de usuario"
+          >
+            <Inline space={8} alignItems="center">
+              <Avatar
+                size={isDesktopOrBigger ? 32 : 24}
+                initials="ML"
+                src="${imagePlaceholder}"
+              />
+              {isDesktopOrBigger && "María López"}
+            </Inline>
+          </NavigationBarAction>
+        )}
+        renderMenu={({ref, className, close}) => (
+          <div ref={ref} className={className}>
+            <MenuSection>
+              <MenuItem
+                label="Mi perfil"
+                onPress={() => {
+                  alert("Navegar a perfil");
+                }}
+              />
+              <MenuItem
+                label="Administración de usuarios"
+                onPress={() => {
+                  alert("Navegar a admin/usuarios");
+                }}
+              />
+            </MenuSection>
+            <MenuSection>
+              <MenuItem
+                label="Cerrar sesión"
+                destructive
+                onPress={() => {
+                  alert("Cerrar sesión");
+                }}
+              />
+            </MenuSection>
+          </div>
+        )}
+      />
+    </NavigationBarActionGroup>
+  }
+/>`,
+    },
 ];
 
 const carouselSnippets = [
