@@ -33,11 +33,13 @@ import {
     IconUserAccountRegular,
     IconSettingsRegular,
     IconLogoutRegular,
+    useScreenSize,
 } from '@telefonica/mistica';
 import { useNavigate } from 'react-router-dom'; // o tu librería de routing
 
 const NavbarWithUserMenu = () => {
     const navigate = useNavigate();
+    const {isDesktopOrBigger} = useScreenSize();
     const [selectedSection, setSelectedSection] = React.useState(0);
 
     return (
@@ -71,11 +73,11 @@ const NavbarWithUserMenu = () => {
                             >
                                 <Inline space={8} alignItems="center">
                                     <Avatar
-                                        size={32}
+                                        size={isDesktopOrBigger ? 32 : 24}
                                         initials="ML"
                                         src="https://example.com/avatar.jpg"
                                     />
-                                    <Text3 regular>María López</Text3>
+                                    {isDesktopOrBigger && <Text3 regular>María López</Text3>}
                                 </Inline>
                             </NavigationBarAction>
                         )}
@@ -143,7 +145,7 @@ import {
     Inline,
     IconButton,
     IconEditRegular,
-    IconDeleteRegular,
+    IconTrashCanRegular,
     MainSectionHeaderLayout,
     MainSectionHeader,
     useDialog,
@@ -244,7 +246,7 @@ const UserAdministrationPage = () => {
                                         onPress={() => handleEditUser(user.id)}
                                     />
                                     <IconButton
-                                        Icon={IconDeleteRegular}
+                                        Icon={IconTrashCanRegular}
                                         aria-label="Eliminar usuario"
                                         onPress={() => handleDeleteUser(user.id)}
                                     />
