@@ -20,6 +20,7 @@ reports
 css/mistica.css
 community.js
 community.d.ts
+*.tsbuildinfo
 
 .yarn/*
 !.yarn/cache
