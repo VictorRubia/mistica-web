@@ -8,6 +8,7 @@ import {
     getBlauSkin,
     getTuSkin,
     getEsimflagSkin,
+    getTelefonicaEmpresasSkin,
 } from '../src';
 
 export const Movistar = {
@@ -40,6 +41,11 @@ export const Telefonica = {
     skin: getTelefonicaSkin(),
 } as const;
 
+export const Telefonica_Empresas = {
+    i18n: {locale: 'es-ES', phoneNumberFormattingRegionCode: 'ES'},
+    skin: getTelefonicaEmpresasSkin(),
+} as const;
+
 export const Blau = {
     i18n: {locale: 'de-DE', phoneNumberFormattingRegionCode: 'DE'},
     skin: getBlauSkin(),
@@ -55,4 +61,4 @@ export const Esimflag = {
     skin: getEsimflagSkin(),
 } as const;
 
-export const AVAILABLE_THEMES = [Movistar, O2, O2_New, Vivo, Vivo_New, Telefonica, Blau, Tu, Esimflag];
+export const AVAILABLE_THEMES = [Movistar, O2, O2_New, Vivo, Vivo_New, Telefonica, Telefonica_Empresas, Blau, Tu, Esimflag];

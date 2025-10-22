@@ -21,7 +21,7 @@ import {
     Portal,
     O2NewLogo,
 } from '../../src';
-import {Movistar, Telefonica, Blau, Vivo_New, Tu, O2_New} from '../themes';
+import {Movistar, Telefonica, Telefonica_Empresas, Blau, Vivo_New, Tu, O2_New} from '../themes';
 import {useOverrideTheme} from '../frame-component';
 import IconSun from '../icons/icon-sun';
 import IconMoon from '../icons/icon-moon';
@@ -32,6 +32,7 @@ import * as styles from '../preview-tools.css';
 import {CSSTransition} from 'react-transition-group';
 
 import type {ThemeConfig, ColorScheme, KnownSkinName, IconProps} from '../../src';
+import { TelefonicaEmpresasLogo } from '../../src/logo';
 
 export * from '../../src';
 export * from '../../src/community';
@@ -66,6 +67,11 @@ const themesMap: {
         text: 'Telefónica',
         themeConfig: Telefonica,
         Icon: () => <TelefonicaLogo size={24} />,
+    },
+    'Telefonica-empresas': {
+        text: 'Telefónica Empresas',
+        themeConfig: Telefonica_Empresas,
+        Icon: () => <TelefonicaEmpresasLogo size={24} />,
     },
     Blau: {
         text: 'Blau',

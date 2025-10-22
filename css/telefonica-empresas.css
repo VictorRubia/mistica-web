@@ -1,0 +1,817 @@
+[data-mistica-skin='telefonica-empresas'] {
+    /* Palette colors */
+    --mistica-telefonica-empresas-white: #ffffff;
+    --mistica-telefonica-empresas-coral10: #f9eeed;
+    --mistica-telefonica-empresas-telefonicaBlue: #0066ff;
+    --mistica-telefonica-empresas-telefonicaBlue70: #0356c9;
+    --mistica-telefonica-empresas-grey1: #f7f7ff;
+    --mistica-telefonica-empresas-grey2: #d1d5e4;
+    --mistica-telefonica-empresas-grey5: #6e7894;
+    --mistica-telefonica-empresas-coral60: #d22a1e;
+    --mistica-telefonica-empresas-coral65: #c82c1e;
+    --mistica-telefonica-empresas-telefonicaBlue10: #e5f0ff;
+    --mistica-telefonica-empresas-telefonicaBlue30: #80b3ff;
+    --mistica-telefonica-empresas-grey9: #031a34;
+    --mistica-telefonica-empresas-grey6: #58617a;
+    --mistica-telefonica-empresas-turquoise: #75c0c7;
+    --mistica-telefonica-empresas-yellow70: #a7863e;
+    --mistica-telefonica-empresas-orchid: #b86be8;
+    --mistica-telefonica-empresas-coral30: #f2b1a5;
+    --mistica-telefonica-empresas-turquoise10: #ebffff;
+    --mistica-telefonica-empresas-yellow15: #fcf7db;
+    --mistica-telefonica-empresas-orchid10: #f8f0fd;
+    --mistica-telefonica-empresas-turquoise70: #528889;
+    --mistica-telefonica-empresas-orchid70: #7f258e;
+    --mistica-telefonica-empresas-grey4: #8f97af;
+    --mistica-telefonica-empresas-orchid80: #471551;
+    --mistica-telefonica-empresas-turquoise80: #253d3c;
+    --mistica-telefonica-empresas-yellow80: #473515;
+    --mistica-telefonica-empresas-darkModeBlack: #000522;
+    --mistica-telefonica-empresas-darkModeGrey: #00182f;
+    --mistica-telefonica-empresas-grey8: #2b3447;
+    --mistica-telefonica-empresas-darkModeTelefonicaBlue: #227aff;
+    --mistica-telefonica-empresas-coral: #d6786b;
+    --mistica-telefonica-empresas-darkModeGrey6: #00264d;
+    --mistica-telefonica-empresas-telefonicaBlue20: #b2d1ff;
+    --mistica-telefonica-empresas-grey3: #b0b6ca;
+    --mistica-telefonica-empresas-yellow: #e4c35c;
+    --mistica-telefonica-empresas-turquoise40: #9ed3d8;
+    --mistica-telefonica-empresas-yellow40: #f3e996;
+    --mistica-telefonica-empresas-orchid40: #cd97ef;
+    --mistica-telefonica-empresas-telefonicaBlue80: #002e73;
+    --mistica-telefonica-empresas-coral90: #491818;
+
+    /* Raw palette colors, for use with rgba() */
+    --mistica-telefonica-empresas-raw-telefonicaBlue70: 3, 86, 201;
+    --mistica-telefonica-empresas-raw-darkModeBlack: 0, 5, 34;
+    --mistica-telefonica-empresas-raw-grey6: 88, 97, 122;
+    --mistica-telefonica-empresas-raw-white: 255, 255, 255;
+    --mistica-telefonica-empresas-raw-black: 0, 0, 0;
+    --mistica-telefonica-empresas-raw-darkModeGrey: 0, 24, 47;
+    --mistica-telefonica-empresas-raw-coral60: 210, 42, 30;
+    --mistica-telefonica-empresas-raw-telefonicaBlue30: 128, 179, 255;
+
+    /* Colors */
+    --mistica-color-appBarBackground: var(--mistica-telefonica-empresas-white);
+    --mistica-color-background: var(--mistica-telefonica-empresas-white);
+    --mistica-color-backgroundContainer: var(--mistica-telefonica-empresas-white);
+    --mistica-color-backgroundContainerError: var(--mistica-telefonica-empresas-coral10);
+    --mistica-color-backgroundContainerHover: rgba(var(--mistica-telefonica-empresas-raw-telefonicaBlue70), 0.05);
+    --mistica-color-backgroundContainerPressed: rgba(var(--mistica-telefonica-empresas-raw-telefonicaBlue70), 0.08);
+    --mistica-color-backgroundContainerBrand: var(--mistica-telefonica-empresas-telefonicaBlue);
+    --mistica-color-backgroundContainerBrandHover: rgba(var(--mistica-telefonica-empresas-raw-darkModeBlack), 0.2);
+    --mistica-color-backgroundContainerBrandPressed: rgba(var(--mistica-telefonica-empresas-raw-darkModeBlack), 0.4);
+    --mistica-color-backgroundContainerBrandOverInverse: var(--mistica-telefonica-empresas-telefonicaBlue70);
+    --mistica-color-backgroundContainerAlternative: var(--mistica-telefonica-empresas-grey1);
+    --mistica-color-backgroundBrand: var(--mistica-telefonica-empresas-telefonicaBlue);
+    --mistica-color-backgroundBrandSecondary: var(--mistica-telefonica-empresas-telefonicaBlue);
+    --mistica-color-backgroundOverlay: rgba(var(--mistica-telefonica-empresas-raw-grey6), 0.8);
+    --mistica-color-backgroundSkeleton: var(--mistica-telefonica-empresas-grey2);
+    --mistica-color-backgroundSkeletonInverse: var(--mistica-telefonica-empresas-telefonicaBlue70);
+    --mistica-color-navigationBarBackground: var(--mistica-telefonica-empresas-telefonicaBlue);
+    --mistica-color-backgroundAlternative: var(--mistica-telefonica-empresas-grey1);
+    --mistica-color-backgroundBrandTop: var(--mistica-telefonica-empresas-telefonicaBlue);
+    --mistica-color-backgroundBrandBottom: var(--mistica-telefonica-empresas-telefonicaBlue);
+    --mistica-color-skeletonWave: var(--mistica-telefonica-empresas-grey2);
+    --mistica-color-borderLow: var(--mistica-telefonica-empresas-grey1);
+    --mistica-color-border: var(--mistica-telefonica-empresas-grey2);
+    --mistica-color-borderHigh: var(--mistica-telefonica-empresas-grey5);
+    --mistica-color-borderSelected: var(--mistica-telefonica-empresas-telefonicaBlue);
+    --mistica-color-coverBackgroundHover: rgba(var(--mistica-telefonica-empresas-raw-darkModeBlack), 0.25);
+    --mistica-color-coverBackgroundPressed: rgba(var(--mistica-telefonica-empresas-raw-darkModeBlack), 0.35);
+    --mistica-color-buttonDangerBackground: var(--mistica-telefonica-empresas-coral60);
+    --mistica-color-buttonDangerBackgroundPressed: var(--mistica-telefonica-empresas-coral65);
+    --mistica-color-buttonDangerBackgroundHover: var(--mistica-telefonica-empresas-coral65);
+    --mistica-color-buttonLinkDangerBackgroundPressed: var(--mistica-telefonica-empresas-coral10);
+    --mistica-color-buttonLinkDangerBackgroundInverse: var(--mistica-telefonica-empresas-white);
+    --mistica-color-buttonLinkDangerBackgroundInversePressed: var(--mistica-telefonica-empresas-coral10);
+    --mistica-color-buttonLinkBackgroundPressed: var(--mistica-telefonica-empresas-grey1);
+    --mistica-color-buttonLinkBackgroundInversePressed: rgba(var(--mistica-telefonica-empresas-raw-white), 0.08);
+    --mistica-color-buttonPrimaryBackground: var(--mistica-telefonica-empresas-telefonicaBlue);
+    --mistica-color-buttonPrimaryBackgroundInverse: var(--mistica-telefonica-empresas-white);
+    --mistica-color-buttonPrimaryBackgroundPressed: var(--mistica-telefonica-empresas-telefonicaBlue70);
+    --mistica-color-buttonPrimaryBackgroundHover: var(--mistica-telefonica-empresas-telefonicaBlue70);
+    --mistica-color-buttonPrimaryBackgroundInversePressed: var(--mistica-telefonica-empresas-telefonicaBlue10);
+    --mistica-color-buttonSecondaryBorder: var(--mistica-telefonica-empresas-telefonicaBlue);
+    --mistica-color-buttonSecondaryBorderPressed: var(--mistica-telefonica-empresas-telefonicaBlue70);
+    --mistica-color-buttonSecondaryBackgroundHover: var(--mistica-telefonica-empresas-telefonicaBlue10);
+    --mistica-color-buttonSecondaryBackgroundPressed: var(--mistica-telefonica-empresas-telefonicaBlue10);
+    --mistica-color-buttonSecondaryBorderInverse: var(--mistica-telefonica-empresas-white);
+    --mistica-color-buttonSecondaryBorderInversePressed: var(--mistica-telefonica-empresas-white);
+    --mistica-color-buttonSecondaryBackgroundInverseHover: rgba(var(--mistica-telefonica-empresas-raw-white), 0.1);
+    --mistica-color-buttonSecondaryBackgroundInversePressed: rgba(var(--mistica-telefonica-empresas-raw-white), 0.1);
+    --mistica-color-textButtonPrimary: var(--mistica-telefonica-empresas-white);
+    --mistica-color-textButtonPrimaryInverse: var(--mistica-telefonica-empresas-telefonicaBlue);
+    --mistica-color-textButtonPrimaryInversePressed: var(--mistica-telefonica-empresas-telefonicaBlue70);
+    --mistica-color-textButtonSecondary: var(--mistica-telefonica-empresas-telefonicaBlue);
+    --mistica-color-textButtonSecondaryPressed: var(--mistica-telefonica-empresas-telefonicaBlue70);
+    --mistica-color-textButtonSecondaryInverse: var(--mistica-telefonica-empresas-white);
+    --mistica-color-textButtonSecondaryInversePressed: var(--mistica-telefonica-empresas-white);
+    --mistica-color-textLink: var(--mistica-telefonica-empresas-telefonicaBlue);
+    --mistica-color-textLinkInverse: var(--mistica-telefonica-empresas-white);
+    --mistica-color-textLinkDanger: var(--mistica-telefonica-empresas-coral60);
+    --mistica-color-textLinkSnackbar: var(--mistica-telefonica-empresas-telefonicaBlue30);
+    --mistica-color-textActivated: var(--mistica-telefonica-empresas-telefonicaBlue70);
+    --mistica-color-textBrand: var(--mistica-telefonica-empresas-telefonicaBlue70);
+    --mistica-color-inputBorder: var(--mistica-telefonica-empresas-grey5);
+    --mistica-color-inputBorderInverse: var(--mistica-telefonica-empresas-white);
+    --mistica-color-completedStep: var(--mistica-telefonica-empresas-telefonicaBlue);
+    --mistica-color-completedStepInverse: var(--mistica-telefonica-empresas-telefonicaBlue70);
+    --mistica-color-control: var(--mistica-telefonica-empresas-grey5);
+    --mistica-color-controlActivated: var(--mistica-telefonica-empresas-telefonicaBlue);
+    --mistica-color-controlInverse: var(--mistica-telefonica-empresas-grey1);
+    --mistica-color-controlActivatedInverse: var(--mistica-telefonica-empresas-white);
+    --mistica-color-controlError: var(--mistica-telefonica-empresas-coral60);
+    --mistica-color-barTrack: var(--mistica-telefonica-empresas-grey2);
+    --mistica-color-barTrackInverse: rgba(var(--mistica-telefonica-empresas-raw-white), 0.3);
+    --mistica-color-loadingBar: var(--mistica-telefonica-empresas-telefonicaBlue30);
+    --mistica-color-loadingBarBackground: var(--mistica-telefonica-empresas-telefonicaBlue70);
+    --mistica-color-toggleAndroidInactive: var(--mistica-telefonica-empresas-grey2);
+    --mistica-color-toggleAndroidBackgroundActive: var(--mistica-telefonica-empresas-grey2);
+    --mistica-color-iosControlKnob: var(--mistica-telefonica-empresas-white);
+    --mistica-color-controlKnobInverse: var(--mistica-telefonica-empresas-telefonicaBlue);
+    --mistica-color-divider: var(--mistica-telefonica-empresas-grey2);
+    --mistica-color-dividerInverse: rgba(var(--mistica-telefonica-empresas-raw-white), 0.2);
+    --mistica-color-navigationBarDivider: var(--mistica-telefonica-empresas-telefonicaBlue);
+    --mistica-color-badge: var(--mistica-telefonica-empresas-coral60);
+    --mistica-color-feedbackErrorBackground: var(--mistica-telefonica-empresas-coral60);
+    --mistica-color-feedbackInfoBackground: var(--mistica-telefonica-empresas-grey9);
+    --mistica-color-brand: var(--mistica-telefonica-empresas-telefonicaBlue);
+    --mistica-color-brandHigh: var(--mistica-telefonica-empresas-telefonicaBlue70);
+    --mistica-color-inverse: var(--mistica-telefonica-empresas-white);
+    --mistica-color-neutralHigh: var(--mistica-telefonica-empresas-grey9);
+    --mistica-color-neutralMedium: var(--mistica-telefonica-empresas-grey5);
+    --mistica-color-neutralMediumInverse: var(--mistica-telefonica-empresas-grey5);
+    --mistica-color-neutralLow: var(--mistica-telefonica-empresas-grey1);
+    --mistica-color-neutralLowAlternative: var(--mistica-telefonica-empresas-grey2);
+    --mistica-color-textPrimary: var(--mistica-telefonica-empresas-grey9);
+    --mistica-color-textPrimaryInverse: var(--mistica-telefonica-empresas-white);
+    --mistica-color-textSecondary: var(--mistica-telefonica-empresas-grey6);
+    --mistica-color-textSecondaryInverse: var(--mistica-telefonica-empresas-white);
+    --mistica-color-error: var(--mistica-telefonica-empresas-coral60);
+    --mistica-color-textError: var(--mistica-telefonica-empresas-coral60);
+    --mistica-color-textErrorInverse: var(--mistica-telefonica-empresas-white);
+    --mistica-color-success: var(--mistica-telefonica-empresas-turquoise);
+    --mistica-color-warning: var(--mistica-telefonica-empresas-yellow70);
+    --mistica-color-promo: var(--mistica-telefonica-empresas-orchid);
+    --mistica-color-highlight: var(--mistica-telefonica-empresas-coral30);
+    --mistica-color-successLow: var(--mistica-telefonica-empresas-turquoise10);
+    --mistica-color-warningLow: var(--mistica-telefonica-empresas-yellow15);
+    --mistica-color-errorLow: var(--mistica-telefonica-empresas-coral10);
+    --mistica-color-promoLow: var(--mistica-telefonica-empresas-orchid10);
+    --mistica-color-brandLow: var(--mistica-telefonica-empresas-telefonicaBlue10);
+    --mistica-color-successHigh: var(--mistica-telefonica-empresas-turquoise70);
+    --mistica-color-warningHigh: var(--mistica-telefonica-empresas-yellow70);
+    --mistica-color-errorHigh: var(--mistica-telefonica-empresas-coral65);
+    --mistica-color-promoHigh: var(--mistica-telefonica-empresas-orchid70);
+    --mistica-color-successHighInverse: var(--mistica-telefonica-empresas-turquoise70);
+    --mistica-color-warningHighInverse: var(--mistica-telefonica-empresas-yellow70);
+    --mistica-color-errorHighInverse: var(--mistica-telefonica-empresas-coral65);
+    --mistica-color-promoHighInverse: var(--mistica-telefonica-empresas-orchid70);
+    --mistica-color-textNavigationBarPrimary: var(--mistica-telefonica-empresas-white);
+    --mistica-color-textNavigationBarSecondary: var(--mistica-telefonica-empresas-grey1);
+    --mistica-color-textNavigationSearchBarHint: var(--mistica-telefonica-empresas-grey1);
+    --mistica-color-textNavigationSearchBarText: var(--mistica-telefonica-empresas-white);
+    --mistica-color-textAppBar: var(--mistica-telefonica-empresas-grey4);
+    --mistica-color-textAppBarSelected: var(--mistica-telefonica-empresas-telefonicaBlue70);
+    --mistica-color-customTabsBackground: var(--mistica-telefonica-empresas-telefonicaBlue70);
+    --mistica-color-tagTextPromo: var(--mistica-telefonica-empresas-orchid80);
+    --mistica-color-tagTextActive: var(--mistica-telefonica-empresas-telefonicaBlue70);
+    --mistica-color-tagTextInactive: var(--mistica-telefonica-empresas-grey6);
+    --mistica-color-tagTextInfo: var(--mistica-telefonica-empresas-telefonicaBlue70);
+    --mistica-color-tagTextSuccess: var(--mistica-telefonica-empresas-turquoise80);
+    --mistica-color-tagTextWarning: var(--mistica-telefonica-empresas-yellow80);
+    --mistica-color-tagTextError: var(--mistica-telefonica-empresas-coral65);
+    --mistica-color-tagBackgroundPromo: var(--mistica-telefonica-empresas-orchid10);
+    --mistica-color-tagBackgroundActive: var(--mistica-telefonica-empresas-grey1);
+    --mistica-color-tagBackgroundInactive: var(--mistica-telefonica-empresas-grey1);
+    --mistica-color-tagBackgroundInfo: var(--mistica-telefonica-empresas-telefonicaBlue10);
+    --mistica-color-tagBackgroundSuccess: var(--mistica-telefonica-empresas-turquoise10);
+    --mistica-color-tagBackgroundWarning: var(--mistica-telefonica-empresas-yellow15);
+    --mistica-color-tagBackgroundError: var(--mistica-telefonica-empresas-coral10);
+    --mistica-color-tagTextPromoInverse: var(--mistica-telefonica-empresas-orchid80);
+    --mistica-color-tagTextActiveInverse: var(--mistica-telefonica-empresas-telefonicaBlue70);
+    --mistica-color-tagTextInactiveInverse: var(--mistica-telefonica-empresas-grey6);
+    --mistica-color-tagTextInfoInverse: var(--mistica-telefonica-empresas-telefonicaBlue70);
+    --mistica-color-tagTextSuccessInverse: var(--mistica-telefonica-empresas-turquoise80);
+    --mistica-color-tagTextWarningInverse: var(--mistica-telefonica-empresas-yellow80);
+    --mistica-color-tagTextErrorInverse: var(--mistica-telefonica-empresas-coral65);
+    --mistica-color-tagBackgroundPromoInverse: var(--mistica-telefonica-empresas-orchid10);
+    --mistica-color-tagBackgroundActiveInverse: var(--mistica-telefonica-empresas-grey1);
+    --mistica-color-tagBackgroundInactiveInverse: var(--mistica-telefonica-empresas-grey1);
+    --mistica-color-tagBackgroundInfoInverse: var(--mistica-telefonica-empresas-telefonicaBlue10);
+    --mistica-color-tagBackgroundSuccessInverse: var(--mistica-telefonica-empresas-turquoise10);
+    --mistica-color-tagBackgroundWarningInverse: var(--mistica-telefonica-empresas-yellow15);
+    --mistica-color-tagBackgroundErrorInverse: var(--mistica-telefonica-empresas-coral10);
+    --mistica-color-cardContentOverlay: linear-gradient(
+        180deg,
+        rgba(var(--mistica-telefonica-empresas-raw-black), 0) 0%,
+        rgba(var(--mistica-telefonica-empresas-raw-black), 0.4) 30%,
+        rgba(var(--mistica-telefonica-empresas-raw-black), 0.7) 100%
+    );
+
+    /* Border radius */
+    --mistica-border-radius-avatar: 50%;
+    --mistica-border-radius-bar: 0px;
+    --mistica-border-radius-button: 999px;
+    --mistica-border-radius-checkbox: 0px;
+    --mistica-border-radius-container: 0px;
+    --mistica-border-radius-indicator: 999px;
+    --mistica-border-radius-input: 0px;
+    --mistica-border-radius-legacyDisplay: 0px;
+    --mistica-border-radius-popup: 0px;
+    --mistica-border-radius-sheet: 0px;
+    --mistica-border-radius-mediaSmall: 0px;
+
+    /* Text */
+    --mistica-font-size-1: 0.75rem;
+    --mistica-line-height-1: 1rem;
+    --mistica-font-size-2: 0.875rem;
+    --mistica-line-height-2: 1.25rem;
+    --mistica-font-size-3: 1rem;
+    --mistica-line-height-3: 1.5rem;
+    --mistica-font-size-4: 1.125rem;
+    --mistica-line-height-4: 1.5rem;
+    --mistica-font-size-5: 1.25rem;
+    --mistica-line-height-5: 1.5rem;
+    --mistica-font-weight-5: 400;
+    --mistica-font-size-6: 1.5rem;
+    --mistica-line-height-6: 2rem;
+    --mistica-font-weight-6: 400;
+    --mistica-font-size-7: 1.75rem;
+    --mistica-line-height-7: 2rem;
+    --mistica-font-weight-7: 400;
+    --mistica-font-size-8: 2rem;
+    --mistica-line-height-8: 2.5rem;
+    --mistica-font-weight-8: 400;
+    --mistica-font-size-9: 2.5rem;
+    --mistica-line-height-9: 3rem;
+    --mistica-font-weight-9: 400;
+    --mistica-font-size-10: 3rem;
+    --mistica-line-height-10: 3.5rem;
+    --mistica-font-weight-10: 400;
+    --mistica-font-size-cardTitle: 1.25rem;
+    --mistica-line-height-cardTitle: 1.5rem;
+    --mistica-font-weight-cardTitle: 400;
+    --mistica-font-weight-button: 500;
+    --mistica-font-size-tabsLabel: 1rem;
+    --mistica-line-height-tabsLabel: 1.5rem;
+    --mistica-font-weight-tabsLabel: 500;
+    --mistica-font-weight-link: 500;
+    --mistica-font-weight-title1: 500;
+    --mistica-font-weight-title2: 400;
+    --mistica-font-size-title3: 1.25rem;
+    --mistica-line-height-title3: 1.5rem;
+    --mistica-font-weight-title3: 400;
+    --mistica-font-weight-indicator: 500;
+    --mistica-font-weight-navigationBar: 500;
+}
+
+[data-mistica-skin='telefonica-empresas'][data-mistica-color-scheme='dark'] {
+    --mistica-color-background: var(--mistica-telefonica-empresas-darkModeBlack);
+    --mistica-color-backgroundAlternative: var(--mistica-telefonica-empresas-darkModeBlack);
+    --mistica-color-backgroundBrand: var(--mistica-telefonica-empresas-darkModeBlack);
+    --mistica-color-backgroundBrandSecondary: var(--mistica-telefonica-empresas-darkModeBlack);
+    --mistica-color-backgroundContainer: var(--mistica-telefonica-empresas-darkModeGrey);
+    --mistica-color-backgroundContainerError: var(--mistica-telefonica-empresas-darkModeGrey);
+    --mistica-color-backgroundContainerHover: rgba(var(--mistica-telefonica-empresas-raw-telefonicaBlue70), 0.05);
+    --mistica-color-backgroundContainerPressed: rgba(var(--mistica-telefonica-empresas-raw-telefonicaBlue70), 0.08);
+    --mistica-color-backgroundContainerBrand: var(--mistica-telefonica-empresas-darkModeGrey);
+    --mistica-color-backgroundContainerBrandHover: rgba(var(--mistica-telefonica-empresas-raw-white), 0.03);
+    --mistica-color-backgroundContainerBrandPressed: rgba(var(--mistica-telefonica-empresas-raw-white), 0.05);
+    --mistica-color-backgroundContainerBrandOverInverse: var(--mistica-telefonica-empresas-darkModeGrey);
+    --mistica-color-backgroundContainerAlternative: var(--mistica-telefonica-empresas-darkModeGrey);
+    --mistica-color-backgroundOverlay: rgba(var(--mistica-telefonica-empresas-raw-darkModeGrey), 0.8);
+    --mistica-color-backgroundSkeleton: var(--mistica-telefonica-empresas-grey8);
+    --mistica-color-backgroundSkeletonInverse: var(--mistica-telefonica-empresas-grey8);
+    --mistica-color-backgroundBrandTop: var(--mistica-telefonica-empresas-darkModeBlack);
+    --mistica-color-backgroundBrandBottom: var(--mistica-telefonica-empresas-darkModeBlack);
+    --mistica-color-appBarBackground: var(--mistica-telefonica-empresas-darkModeGrey);
+    --mistica-color-navigationBarBackground: var(--mistica-telefonica-empresas-darkModeBlack);
+    --mistica-color-skeletonWave: var(--mistica-telefonica-empresas-grey8);
+    --mistica-color-borderLow: var(--mistica-telefonica-empresas-darkModeBlack);
+    --mistica-color-border: var(--mistica-telefonica-empresas-darkModeGrey);
+    --mistica-color-borderHigh: var(--mistica-telefonica-empresas-grey5);
+    --mistica-color-borderSelected: var(--mistica-telefonica-empresas-darkModeTelefonicaBlue);
+    --mistica-color-coverBackgroundHover: rgba(var(--mistica-telefonica-empresas-raw-darkModeBlack), 0.25);
+    --mistica-color-coverBackgroundPressed: rgba(var(--mistica-telefonica-empresas-raw-darkModeBlack), 0.35);
+    --mistica-color-buttonDangerBackground: var(--mistica-telefonica-empresas-coral60);
+    --mistica-color-buttonDangerBackgroundPressed: var(--mistica-telefonica-empresas-coral65);
+    --mistica-color-buttonDangerBackgroundHover: var(--mistica-telefonica-empresas-coral65);
+    --mistica-color-buttonLinkDangerBackgroundPressed: rgba(var(--mistica-telefonica-empresas-raw-coral60), 0.16);
+    --mistica-color-buttonLinkDangerBackgroundInverse: rgba(var(--mistica-telefonica-empresas-raw-coral60), 0.16);
+    --mistica-color-buttonLinkDangerBackgroundInversePressed: rgba(
+        var(--mistica-telefonica-empresas-raw-coral60),
+        0.16
+    );
+    --mistica-color-buttonLinkBackgroundPressed: rgba(var(--mistica-telefonica-empresas-raw-telefonicaBlue30), 0.16);
+    --mistica-color-buttonLinkBackgroundInversePressed: rgba(
+        var(--mistica-telefonica-empresas-raw-telefonicaBlue30),
+        0.16
+    );
+    --mistica-color-buttonPrimaryBackground: var(--mistica-telefonica-empresas-telefonicaBlue);
+    --mistica-color-buttonPrimaryBackgroundInverse: var(--mistica-telefonica-empresas-white);
+    --mistica-color-buttonPrimaryBackgroundPressed: var(--mistica-telefonica-empresas-telefonicaBlue70);
+    --mistica-color-buttonPrimaryBackgroundHover: var(--mistica-telefonica-empresas-telefonicaBlue70);
+    --mistica-color-buttonPrimaryBackgroundInversePressed: var(--mistica-telefonica-empresas-telefonicaBlue10);
+    --mistica-color-buttonSecondaryBackgroundPressed: rgba(var(--mistica-telefonica-empresas-raw-white), 0.15);
+    --mistica-color-buttonSecondaryBorder: var(--mistica-telefonica-empresas-white);
+    --mistica-color-buttonSecondaryBackgroundHover: rgba(var(--mistica-telefonica-empresas-raw-white), 0.15);
+    --mistica-color-buttonSecondaryBorderPressed: var(--mistica-telefonica-empresas-white);
+    --mistica-color-buttonSecondaryBorderInverse: var(--mistica-telefonica-empresas-white);
+    --mistica-color-buttonSecondaryBorderInversePressed: var(--mistica-telefonica-empresas-white);
+    --mistica-color-buttonSecondaryBackgroundInverseHover: rgba(var(--mistica-telefonica-empresas-raw-white), 0.15);
+    --mistica-color-buttonSecondaryBackgroundInversePressed: rgba(var(--mistica-telefonica-empresas-raw-white), 0.15);
+    --mistica-color-textButtonPrimary: var(--mistica-telefonica-empresas-white);
+    --mistica-color-textButtonPrimaryInverse: var(--mistica-telefonica-empresas-telefonicaBlue);
+    --mistica-color-textButtonPrimaryInversePressed: var(--mistica-telefonica-empresas-telefonicaBlue70);
+    --mistica-color-textButtonSecondary: var(--mistica-telefonica-empresas-white);
+    --mistica-color-textButtonSecondaryPressed: var(--mistica-telefonica-empresas-white);
+    --mistica-color-textButtonSecondaryInverse: var(--mistica-telefonica-empresas-white);
+    --mistica-color-textButtonSecondaryInversePressed: var(--mistica-telefonica-empresas-white);
+    --mistica-color-textLink: var(--mistica-telefonica-empresas-darkModeTelefonicaBlue);
+    --mistica-color-textLinkInverse: var(--mistica-telefonica-empresas-darkModeTelefonicaBlue);
+    --mistica-color-textLinkDanger: var(--mistica-telefonica-empresas-coral);
+    --mistica-color-textLinkSnackbar: var(--mistica-telefonica-empresas-darkModeTelefonicaBlue);
+    --mistica-color-textActivated: var(--mistica-telefonica-empresas-telefonicaBlue30);
+    --mistica-color-textBrand: var(--mistica-telefonica-empresas-telefonicaBlue30);
+    --mistica-color-inputBorder: var(--mistica-telefonica-empresas-grey5);
+    --mistica-color-inputBorderInverse: var(--mistica-telefonica-empresas-grey5);
+    --mistica-color-completedStep: var(--mistica-telefonica-empresas-telefonicaBlue);
+    --mistica-color-completedStepInverse: var(--mistica-telefonica-empresas-telefonicaBlue);
+    --mistica-color-control: var(--mistica-telefonica-empresas-grey5);
+    --mistica-color-controlActivated: var(--mistica-telefonica-empresas-darkModeTelefonicaBlue);
+    --mistica-color-controlInverse: var(--mistica-telefonica-empresas-grey5);
+    --mistica-color-controlActivatedInverse: var(--mistica-telefonica-empresas-darkModeTelefonicaBlue);
+    --mistica-color-controlError: var(--mistica-telefonica-empresas-coral);
+    --mistica-color-barTrack: var(--mistica-telefonica-empresas-darkModeGrey6);
+    --mistica-color-barTrackInverse: var(--mistica-telefonica-empresas-darkModeGrey6);
+    --mistica-color-loadingBar: var(--mistica-telefonica-empresas-darkModeTelefonicaBlue);
+    --mistica-color-loadingBarBackground: var(--mistica-telefonica-empresas-grey6);
+    --mistica-color-toggleAndroidInactive: var(--mistica-telefonica-empresas-grey2);
+    --mistica-color-toggleAndroidBackgroundActive: var(--mistica-telefonica-empresas-telefonicaBlue20);
+    --mistica-color-iosControlKnob: var(--mistica-telefonica-empresas-grey1);
+    --mistica-color-controlKnobInverse: var(--mistica-telefonica-empresas-grey1);
+    --mistica-color-divider: rgba(var(--mistica-telefonica-empresas-raw-white), 0.2);
+    --mistica-color-dividerInverse: rgba(var(--mistica-telefonica-empresas-raw-white), 0.05);
+    --mistica-color-navigationBarDivider: var(--mistica-telefonica-empresas-darkModeBlack);
+    --mistica-color-badge: var(--mistica-telefonica-empresas-coral60);
+    --mistica-color-feedbackErrorBackground: var(--mistica-telefonica-empresas-coral65);
+    --mistica-color-feedbackInfoBackground: var(--mistica-telefonica-empresas-darkModeGrey);
+    --mistica-color-brand: var(--mistica-telefonica-empresas-darkModeTelefonicaBlue);
+    --mistica-color-brandHigh: rgba(var(--mistica-telefonica-empresas-raw-white), 0.05);
+    --mistica-color-inverse: var(--mistica-telefonica-empresas-grey1);
+    --mistica-color-neutralHigh: var(--mistica-telefonica-empresas-grey2);
+    --mistica-color-neutralMedium: var(--mistica-telefonica-empresas-grey5);
+    --mistica-color-neutralMediumInverse: var(--mistica-telefonica-empresas-grey5);
+    --mistica-color-neutralLow: var(--mistica-telefonica-empresas-darkModeGrey6);
+    --mistica-color-neutralLowAlternative: var(--mistica-telefonica-empresas-darkModeGrey6);
+    --mistica-color-textPrimary: var(--mistica-telefonica-empresas-grey1);
+    --mistica-color-textPrimaryInverse: var(--mistica-telefonica-empresas-grey1);
+    --mistica-color-textSecondary: var(--mistica-telefonica-empresas-grey3);
+    --mistica-color-textSecondaryInverse: var(--mistica-telefonica-empresas-grey3);
+    --mistica-color-error: var(--mistica-telefonica-empresas-coral);
+    --mistica-color-textError: var(--mistica-telefonica-empresas-coral);
+    --mistica-color-textErrorInverse: var(--mistica-telefonica-empresas-coral);
+    --mistica-color-success: var(--mistica-telefonica-empresas-turquoise);
+    --mistica-color-warning: var(--mistica-telefonica-empresas-yellow);
+    --mistica-color-promo: var(--mistica-telefonica-empresas-orchid);
+    --mistica-color-highlight: var(--mistica-telefonica-empresas-coral30);
+    --mistica-color-successLow: var(--mistica-telefonica-empresas-darkModeGrey6);
+    --mistica-color-warningLow: var(--mistica-telefonica-empresas-darkModeGrey6);
+    --mistica-color-errorLow: var(--mistica-telefonica-empresas-darkModeGrey6);
+    --mistica-color-promoLow: var(--mistica-telefonica-empresas-darkModeGrey6);
+    --mistica-color-brandLow: var(--mistica-telefonica-empresas-darkModeGrey6);
+    --mistica-color-successHigh: var(--mistica-telefonica-empresas-turquoise40);
+    --mistica-color-warningHigh: var(--mistica-telefonica-empresas-yellow40);
+    --mistica-color-errorHigh: var(--mistica-telefonica-empresas-coral30);
+    --mistica-color-promoHigh: var(--mistica-telefonica-empresas-orchid40);
+    --mistica-color-successHighInverse: var(--mistica-telefonica-empresas-turquoise70);
+    --mistica-color-warningHighInverse: var(--mistica-telefonica-empresas-yellow70);
+    --mistica-color-errorHighInverse: var(--mistica-telefonica-empresas-coral65);
+    --mistica-color-promoHighInverse: var(--mistica-telefonica-empresas-orchid70);
+    --mistica-color-textNavigationBarPrimary: var(--mistica-telefonica-empresas-white);
+    --mistica-color-textNavigationBarSecondary: var(--mistica-telefonica-empresas-grey4);
+    --mistica-color-textNavigationSearchBarHint: var(--mistica-telefonica-empresas-grey4);
+    --mistica-color-textNavigationSearchBarText: var(--mistica-telefonica-empresas-white);
+    --mistica-color-textAppBar: var(--mistica-telefonica-empresas-grey2);
+    --mistica-color-textAppBarSelected: var(--mistica-telefonica-empresas-white);
+    --mistica-color-customTabsBackground: var(--mistica-telefonica-empresas-darkModeBlack);
+    --mistica-color-tagTextPromo: var(--mistica-telefonica-empresas-orchid40);
+    --mistica-color-tagTextActive: var(--mistica-telefonica-empresas-telefonicaBlue20);
+    --mistica-color-tagTextInactive: var(--mistica-telefonica-empresas-grey3);
+    --mistica-color-tagTextInfo: var(--mistica-telefonica-empresas-telefonicaBlue20);
+    --mistica-color-tagTextSuccess: var(--mistica-telefonica-empresas-turquoise40);
+    --mistica-color-tagTextWarning: var(--mistica-telefonica-empresas-yellow40);
+    --mistica-color-tagTextError: var(--mistica-telefonica-empresas-coral30);
+    --mistica-color-tagBackgroundPromo: var(--mistica-telefonica-empresas-orchid80);
+    --mistica-color-tagBackgroundActive: var(--mistica-telefonica-empresas-telefonicaBlue80);
+    --mistica-color-tagBackgroundInactive: var(--mistica-telefonica-empresas-grey8);
+    --mistica-color-tagBackgroundInfo: var(--mistica-telefonica-empresas-telefonicaBlue80);
+    --mistica-color-tagBackgroundSuccess: var(--mistica-telefonica-empresas-turquoise80);
+    --mistica-color-tagBackgroundWarning: var(--mistica-telefonica-empresas-yellow80);
+    --mistica-color-tagBackgroundError: var(--mistica-telefonica-empresas-coral90);
+    --mistica-color-tagTextPromoInverse: var(--mistica-telefonica-empresas-orchid40);
+    --mistica-color-tagTextActiveInverse: var(--mistica-telefonica-empresas-telefonicaBlue20);
+    --mistica-color-tagTextInactiveInverse: var(--mistica-telefonica-empresas-grey3);
+    --mistica-color-tagTextInfoInverse: var(--mistica-telefonica-empresas-telefonicaBlue20);
+    --mistica-color-tagTextSuccessInverse: var(--mistica-telefonica-empresas-turquoise40);
+    --mistica-color-tagTextWarningInverse: var(--mistica-telefonica-empresas-yellow40);
+    --mistica-color-tagTextErrorInverse: var(--mistica-telefonica-empresas-coral30);
+    --mistica-color-tagBackgroundPromoInverse: var(--mistica-telefonica-empresas-orchid80);
+    --mistica-color-tagBackgroundActiveInverse: var(--mistica-telefonica-empresas-telefonicaBlue80);
+    --mistica-color-tagBackgroundInactiveInverse: var(--mistica-telefonica-empresas-grey8);
+    --mistica-color-tagBackgroundInfoInverse: var(--mistica-telefonica-empresas-telefonicaBlue80);
+    --mistica-color-tagBackgroundSuccessInverse: var(--mistica-telefonica-empresas-turquoise80);
+    --mistica-color-tagBackgroundWarningInverse: var(--mistica-telefonica-empresas-yellow80);
+    --mistica-color-tagBackgroundErrorInverse: var(--mistica-telefonica-empresas-coral90);
+    --mistica-color-cardContentOverlay: linear-gradient(
+        180deg,
+        rgba(var(--mistica-telefonica-empresas-raw-black), 0) 0%,
+        rgba(var(--mistica-telefonica-empresas-raw-black), 0.4) 30%,
+        rgba(var(--mistica-telefonica-empresas-raw-black), 0.7) 100%
+    );
+}
+
+@media (prefers-color-scheme: dark) {
+    [data-mistica-skin='telefonica-empresas'] {
+        --mistica-color-background: var(--mistica-telefonica-empresas-darkModeBlack);
+        --mistica-color-backgroundAlternative: var(--mistica-telefonica-empresas-darkModeBlack);
+        --mistica-color-backgroundBrand: var(--mistica-telefonica-empresas-darkModeBlack);
+        --mistica-color-backgroundBrandSecondary: var(--mistica-telefonica-empresas-darkModeBlack);
+        --mistica-color-backgroundContainer: var(--mistica-telefonica-empresas-darkModeGrey);
+        --mistica-color-backgroundContainerError: var(--mistica-telefonica-empresas-darkModeGrey);
+        --mistica-color-backgroundContainerHover: rgba(var(--mistica-telefonica-empresas-raw-telefonicaBlue70), 0.05);
+        --mistica-color-backgroundContainerPressed: rgba(
+            var(--mistica-telefonica-empresas-raw-telefonicaBlue70),
+            0.08
+        );
+        --mistica-color-backgroundContainerBrand: var(--mistica-telefonica-empresas-darkModeGrey);
+        --mistica-color-backgroundContainerBrandHover: rgba(var(--mistica-telefonica-empresas-raw-white), 0.03);
+        --mistica-color-backgroundContainerBrandPressed: rgba(var(--mistica-telefonica-empresas-raw-white), 0.05);
+        --mistica-color-backgroundContainerBrandOverInverse: var(--mistica-telefonica-empresas-darkModeGrey);
+        --mistica-color-backgroundContainerAlternative: var(--mistica-telefonica-empresas-darkModeGrey);
+        --mistica-color-backgroundOverlay: rgba(var(--mistica-telefonica-empresas-raw-darkModeGrey), 0.8);
+        --mistica-color-backgroundSkeleton: var(--mistica-telefonica-empresas-grey8);
+        --mistica-color-backgroundSkeletonInverse: var(--mistica-telefonica-empresas-grey8);
+        --mistica-color-backgroundBrandTop: var(--mistica-telefonica-empresas-darkModeBlack);
+        --mistica-color-backgroundBrandBottom: var(--mistica-telefonica-empresas-darkModeBlack);
+        --mistica-color-appBarBackground: var(--mistica-telefonica-empresas-darkModeGrey);
+        --mistica-color-navigationBarBackground: var(--mistica-telefonica-empresas-darkModeBlack);
+        --mistica-color-skeletonWave: var(--mistica-telefonica-empresas-grey8);
+        --mistica-color-borderLow: var(--mistica-telefonica-empresas-darkModeBlack);
+        --mistica-color-border: var(--mistica-telefonica-empresas-darkModeGrey);
+        --mistica-color-borderHigh: var(--mistica-telefonica-empresas-grey5);
+        --mistica-color-borderSelected: var(--mistica-telefonica-empresas-darkModeTelefonicaBlue);
+        --mistica-color-coverBackgroundHover: rgba(var(--mistica-telefonica-empresas-raw-darkModeBlack), 0.25);
+        --mistica-color-coverBackgroundPressed: rgba(var(--mistica-telefonica-empresas-raw-darkModeBlack), 0.35);
+        --mistica-color-buttonDangerBackground: var(--mistica-telefonica-empresas-coral60);
+        --mistica-color-buttonDangerBackgroundPressed: var(--mistica-telefonica-empresas-coral65);
+        --mistica-color-buttonDangerBackgroundHover: var(--mistica-telefonica-empresas-coral65);
+        --mistica-color-buttonLinkDangerBackgroundPressed: rgba(var(--mistica-telefonica-empresas-raw-coral60), 0.16);
+        --mistica-color-buttonLinkDangerBackgroundInverse: rgba(var(--mistica-telefonica-empresas-raw-coral60), 0.16);
+        --mistica-color-buttonLinkDangerBackgroundInversePressed: rgba(
+            var(--mistica-telefonica-empresas-raw-coral60),
+            0.16
+        );
+        --mistica-color-buttonLinkBackgroundPressed: rgba(
+            var(--mistica-telefonica-empresas-raw-telefonicaBlue30),
+            0.16
+        );
+        --mistica-color-buttonLinkBackgroundInversePressed: rgba(
+            var(--mistica-telefonica-empresas-raw-telefonicaBlue30),
+            0.16
+        );
+        --mistica-color-buttonPrimaryBackground: var(--mistica-telefonica-empresas-telefonicaBlue);
+        --mistica-color-buttonPrimaryBackgroundInverse: var(--mistica-telefonica-empresas-white);
+        --mistica-color-buttonPrimaryBackgroundPressed: var(--mistica-telefonica-empresas-telefonicaBlue70);
+        --mistica-color-buttonPrimaryBackgroundHover: var(--mistica-telefonica-empresas-telefonicaBlue70);
+        --mistica-color-buttonPrimaryBackgroundInversePressed: var(--mistica-telefonica-empresas-telefonicaBlue10);
+        --mistica-color-buttonSecondaryBackgroundPressed: rgba(var(--mistica-telefonica-empresas-raw-white), 0.15);
+        --mistica-color-buttonSecondaryBorder: var(--mistica-telefonica-empresas-white);
+        --mistica-color-buttonSecondaryBackgroundHover: rgba(var(--mistica-telefonica-empresas-raw-white), 0.15);
+        --mistica-color-buttonSecondaryBorderPressed: var(--mistica-telefonica-empresas-white);
+        --mistica-color-buttonSecondaryBorderInverse: var(--mistica-telefonica-empresas-white);
+        --mistica-color-buttonSecondaryBorderInversePressed: var(--mistica-telefonica-empresas-white);
+        --mistica-color-buttonSecondaryBackgroundInverseHover: rgba(
+            var(--mistica-telefonica-empresas-raw-white),
+            0.15
+        );
+        --mistica-color-buttonSecondaryBackgroundInversePressed: rgba(
+            var(--mistica-telefonica-empresas-raw-white),
+            0.15
+        );
+        --mistica-color-textButtonPrimary: var(--mistica-telefonica-empresas-white);
+        --mistica-color-textButtonPrimaryInverse: var(--mistica-telefonica-empresas-telefonicaBlue);
+        --mistica-color-textButtonPrimaryInversePressed: var(--mistica-telefonica-empresas-telefonicaBlue70);
+        --mistica-color-textButtonSecondary: var(--mistica-telefonica-empresas-white);
+        --mistica-color-textButtonSecondaryPressed: var(--mistica-telefonica-empresas-white);
+        --mistica-color-textButtonSecondaryInverse: var(--mistica-telefonica-empresas-white);
+        --mistica-color-textButtonSecondaryInversePressed: var(--mistica-telefonica-empresas-white);
+        --mistica-color-textLink: var(--mistica-telefonica-empresas-darkModeTelefonicaBlue);
+        --mistica-color-textLinkInverse: var(--mistica-telefonica-empresas-darkModeTelefonicaBlue);
+        --mistica-color-textLinkDanger: var(--mistica-telefonica-empresas-coral);
+        --mistica-color-textLinkSnackbar: var(--mistica-telefonica-empresas-darkModeTelefonicaBlue);
+        --mistica-color-textActivated: var(--mistica-telefonica-empresas-telefonicaBlue30);
+        --mistica-color-textBrand: var(--mistica-telefonica-empresas-telefonicaBlue30);
+        --mistica-color-inputBorder: var(--mistica-telefonica-empresas-grey5);
+        --mistica-color-inputBorderInverse: var(--mistica-telefonica-empresas-grey5);
+        --mistica-color-completedStep: var(--mistica-telefonica-empresas-telefonicaBlue);
+        --mistica-color-completedStepInverse: var(--mistica-telefonica-empresas-telefonicaBlue);
+        --mistica-color-control: var(--mistica-telefonica-empresas-grey5);
+        --mistica-color-controlActivated: var(--mistica-telefonica-empresas-darkModeTelefonicaBlue);
+        --mistica-color-controlInverse: var(--mistica-telefonica-empresas-grey5);
+        --mistica-color-controlActivatedInverse: var(--mistica-telefonica-empresas-darkModeTelefonicaBlue);
+        --mistica-color-controlError: var(--mistica-telefonica-empresas-coral);
+        --mistica-color-barTrack: var(--mistica-telefonica-empresas-darkModeGrey6);
+        --mistica-color-barTrackInverse: var(--mistica-telefonica-empresas-darkModeGrey6);
+        --mistica-color-loadingBar: var(--mistica-telefonica-empresas-darkModeTelefonicaBlue);
+        --mistica-color-loadingBarBackground: var(--mistica-telefonica-empresas-grey6);
+        --mistica-color-toggleAndroidInactive: var(--mistica-telefonica-empresas-grey2);
+        --mistica-color-toggleAndroidBackgroundActive: var(--mistica-telefonica-empresas-telefonicaBlue20);
+        --mistica-color-iosControlKnob: var(--mistica-telefonica-empresas-grey1);
+        --mistica-color-controlKnobInverse: var(--mistica-telefonica-empresas-grey1);
+        --mistica-color-divider: rgba(var(--mistica-telefonica-empresas-raw-white), 0.2);
+        --mistica-color-dividerInverse: rgba(var(--mistica-telefonica-empresas-raw-white), 0.05);
+        --mistica-color-navigationBarDivider: var(--mistica-telefonica-empresas-darkModeBlack);
+        --mistica-color-badge: var(--mistica-telefonica-empresas-coral60);
+        --mistica-color-feedbackErrorBackground: var(--mistica-telefonica-empresas-coral65);
+        --mistica-color-feedbackInfoBackground: var(--mistica-telefonica-empresas-darkModeGrey);
+        --mistica-color-brand: var(--mistica-telefonica-empresas-darkModeTelefonicaBlue);
+        --mistica-color-brandHigh: rgba(var(--mistica-telefonica-empresas-raw-white), 0.05);
+        --mistica-color-inverse: var(--mistica-telefonica-empresas-grey1);
+        --mistica-color-neutralHigh: var(--mistica-telefonica-empresas-grey2);
+        --mistica-color-neutralMedium: var(--mistica-telefonica-empresas-grey5);
+        --mistica-color-neutralMediumInverse: var(--mistica-telefonica-empresas-grey5);
+        --mistica-color-neutralLow: var(--mistica-telefonica-empresas-darkModeGrey6);
+        --mistica-color-neutralLowAlternative: var(--mistica-telefonica-empresas-darkModeGrey6);
+        --mistica-color-textPrimary: var(--mistica-telefonica-empresas-grey1);
+        --mistica-color-textPrimaryInverse: var(--mistica-telefonica-empresas-grey1);
+        --mistica-color-textSecondary: var(--mistica-telefonica-empresas-grey3);
+        --mistica-color-textSecondaryInverse: var(--mistica-telefonica-empresas-grey3);
+        --mistica-color-error: var(--mistica-telefonica-empresas-coral);
+        --mistica-color-textError: var(--mistica-telefonica-empresas-coral);
+        --mistica-color-textErrorInverse: var(--mistica-telefonica-empresas-coral);
+        --mistica-color-success: var(--mistica-telefonica-empresas-turquoise);
+        --mistica-color-warning: var(--mistica-telefonica-empresas-yellow);
+        --mistica-color-promo: var(--mistica-telefonica-empresas-orchid);
+        --mistica-color-highlight: var(--mistica-telefonica-empresas-coral30);
+        --mistica-color-successLow: var(--mistica-telefonica-empresas-darkModeGrey6);
+        --mistica-color-warningLow: var(--mistica-telefonica-empresas-darkModeGrey6);
+        --mistica-color-errorLow: var(--mistica-telefonica-empresas-darkModeGrey6);
+        --mistica-color-promoLow: var(--mistica-telefonica-empresas-darkModeGrey6);
+        --mistica-color-brandLow: var(--mistica-telefonica-empresas-darkModeGrey6);
+        --mistica-color-successHigh: var(--mistica-telefonica-empresas-turquoise40);
+        --mistica-color-warningHigh: var(--mistica-telefonica-empresas-yellow40);
+        --mistica-color-errorHigh: var(--mistica-telefonica-empresas-coral30);
+        --mistica-color-promoHigh: var(--mistica-telefonica-empresas-orchid40);
+        --mistica-color-successHighInverse: var(--mistica-telefonica-empresas-turquoise70);
+        --mistica-color-warningHighInverse: var(--mistica-telefonica-empresas-yellow70);
+        --mistica-color-errorHighInverse: var(--mistica-telefonica-empresas-coral65);
+        --mistica-color-promoHighInverse: var(--mistica-telefonica-empresas-orchid70);
+        --mistica-color-textNavigationBarPrimary: var(--mistica-telefonica-empresas-white);
+        --mistica-color-textNavigationBarSecondary: var(--mistica-telefonica-empresas-grey4);
+        --mistica-color-textNavigationSearchBarHint: var(--mistica-telefonica-empresas-grey4);
+        --mistica-color-textNavigationSearchBarText: var(--mistica-telefonica-empresas-white);
+        --mistica-color-textAppBar: var(--mistica-telefonica-empresas-grey2);
+        --mistica-color-textAppBarSelected: var(--mistica-telefonica-empresas-white);
+        --mistica-color-customTabsBackground: var(--mistica-telefonica-empresas-darkModeBlack);
+        --mistica-color-tagTextPromo: var(--mistica-telefonica-empresas-orchid40);
+        --mistica-color-tagTextActive: var(--mistica-telefonica-empresas-telefonicaBlue20);
+        --mistica-color-tagTextInactive: var(--mistica-telefonica-empresas-grey3);
+        --mistica-color-tagTextInfo: var(--mistica-telefonica-empresas-telefonicaBlue20);
+        --mistica-color-tagTextSuccess: var(--mistica-telefonica-empresas-turquoise40);
+        --mistica-color-tagTextWarning: var(--mistica-telefonica-empresas-yellow40);
+        --mistica-color-tagTextError: var(--mistica-telefonica-empresas-coral30);
+        --mistica-color-tagBackgroundPromo: var(--mistica-telefonica-empresas-orchid80);
+        --mistica-color-tagBackgroundActive: var(--mistica-telefonica-empresas-telefonicaBlue80);
+        --mistica-color-tagBackgroundInactive: var(--mistica-telefonica-empresas-grey8);
+        --mistica-color-tagBackgroundInfo: var(--mistica-telefonica-empresas-telefonicaBlue80);
+        --mistica-color-tagBackgroundSuccess: var(--mistica-telefonica-empresas-turquoise80);
+        --mistica-color-tagBackgroundWarning: var(--mistica-telefonica-empresas-yellow80);
+        --mistica-color-tagBackgroundError: var(--mistica-telefonica-empresas-coral90);
+        --mistica-color-tagTextPromoInverse: var(--mistica-telefonica-empresas-orchid40);
+        --mistica-color-tagTextActiveInverse: var(--mistica-telefonica-empresas-telefonicaBlue20);
+        --mistica-color-tagTextInactiveInverse: var(--mistica-telefonica-empresas-grey3);
+        --mistica-color-tagTextInfoInverse: var(--mistica-telefonica-empresas-telefonicaBlue20);
+        --mistica-color-tagTextSuccessInverse: var(--mistica-telefonica-empresas-turquoise40);
+        --mistica-color-tagTextWarningInverse: var(--mistica-telefonica-empresas-yellow40);
+        --mistica-color-tagTextErrorInverse: var(--mistica-telefonica-empresas-coral30);
+        --mistica-color-tagBackgroundPromoInverse: var(--mistica-telefonica-empresas-orchid80);
+        --mistica-color-tagBackgroundActiveInverse: var(--mistica-telefonica-empresas-telefonicaBlue80);
+        --mistica-color-tagBackgroundInactiveInverse: var(--mistica-telefonica-empresas-grey8);
+        --mistica-color-tagBackgroundInfoInverse: var(--mistica-telefonica-empresas-telefonicaBlue80);
+        --mistica-color-tagBackgroundSuccessInverse: var(--mistica-telefonica-empresas-turquoise80);
+        --mistica-color-tagBackgroundWarningInverse: var(--mistica-telefonica-empresas-yellow80);
+        --mistica-color-tagBackgroundErrorInverse: var(--mistica-telefonica-empresas-coral90);
+        --mistica-color-cardContentOverlay: linear-gradient(
+            180deg,
+            rgba(var(--mistica-telefonica-empresas-raw-black), 0) 0%,
+            rgba(var(--mistica-telefonica-empresas-raw-black), 0.4) 30%,
+            rgba(var(--mistica-telefonica-empresas-raw-black), 0.7) 100%
+        );
+    }
+
+    [data-mistica-skin='telefonica-empresas'][data-mistica-color-scheme='light'] {
+        --mistica-color-background: var(--mistica-telefonica-empresas-white);
+        --mistica-color-backgroundAlternative: var(--mistica-telefonica-empresas-grey1);
+        --mistica-color-backgroundBrand: var(--mistica-telefonica-empresas-telefonicaBlue);
+        --mistica-color-backgroundBrandSecondary: var(--mistica-telefonica-empresas-telefonicaBlue);
+        --mistica-color-backgroundContainer: var(--mistica-telefonica-empresas-white);
+        --mistica-color-backgroundContainerError: var(--mistica-telefonica-empresas-coral10);
+        --mistica-color-backgroundContainerHover: rgba(var(--mistica-telefonica-empresas-raw-telefonicaBlue70), 0.05);
+        --mistica-color-backgroundContainerPressed: rgba(
+            var(--mistica-telefonica-empresas-raw-telefonicaBlue70),
+            0.08
+        );
+        --mistica-color-backgroundContainerBrand: var(--mistica-telefonica-empresas-telefonicaBlue);
+        --mistica-color-backgroundContainerBrandHover: rgba(var(--mistica-telefonica-empresas-raw-darkModeBlack), 0.2);
+        --mistica-color-backgroundContainerBrandPressed: rgba(
+            var(--mistica-telefonica-empresas-raw-darkModeBlack),
+            0.4
+        );
+        --mistica-color-backgroundContainerBrandOverInverse: var(--mistica-telefonica-empresas-telefonicaBlue70);
+        --mistica-color-backgroundContainerAlternative: var(--mistica-telefonica-empresas-grey1);
+        --mistica-color-backgroundOverlay: rgba(var(--mistica-telefonica-empresas-raw-grey6), 0.8);
+        --mistica-color-backgroundSkeleton: var(--mistica-telefonica-empresas-grey2);
+        --mistica-color-backgroundSkeletonInverse: var(--mistica-telefonica-empresas-telefonicaBlue70);
+        --mistica-color-backgroundBrandTop: var(--mistica-telefonica-empresas-telefonicaBlue);
+        --mistica-color-backgroundBrandBottom: var(--mistica-telefonica-empresas-telefonicaBlue);
+        --mistica-color-appBarBackground: var(--mistica-telefonica-empresas-white);
+        --mistica-color-navigationBarBackground: var(--mistica-telefonica-empresas-telefonicaBlue);
+        --mistica-color-skeletonWave: var(--mistica-telefonica-empresas-grey2);
+        --mistica-color-borderLow: var(--mistica-telefonica-empresas-grey1);
+        --mistica-color-border: var(--mistica-telefonica-empresas-grey2);
+        --mistica-color-borderHigh: var(--mistica-telefonica-empresas-grey5);
+        --mistica-color-borderSelected: var(--mistica-telefonica-empresas-telefonicaBlue);
+        --mistica-color-coverBackgroundHover: rgba(var(--mistica-telefonica-empresas-raw-darkModeBlack), 0.25);
+        --mistica-color-coverBackgroundPressed: rgba(var(--mistica-telefonica-empresas-raw-darkModeBlack), 0.35);
+        --mistica-color-buttonDangerBackground: var(--mistica-telefonica-empresas-coral60);
+        --mistica-color-buttonDangerBackgroundPressed: var(--mistica-telefonica-empresas-coral65);
+        --mistica-color-buttonDangerBackgroundHover: var(--mistica-telefonica-empresas-coral65);
+        --mistica-color-buttonLinkDangerBackgroundPressed: var(--mistica-telefonica-empresas-coral10);
+        --mistica-color-buttonLinkDangerBackgroundInverse: var(--mistica-telefonica-empresas-white);
+        --mistica-color-buttonLinkDangerBackgroundInversePressed: var(--mistica-telefonica-empresas-coral10);
+        --mistica-color-buttonLinkBackgroundPressed: var(--mistica-telefonica-empresas-grey1);
+        --mistica-color-buttonLinkBackgroundInversePressed: rgba(var(--mistica-telefonica-empresas-raw-white), 0.08);
+        --mistica-color-buttonPrimaryBackground: var(--mistica-telefonica-empresas-telefonicaBlue);
+        --mistica-color-buttonPrimaryBackgroundInverse: var(--mistica-telefonica-empresas-white);
+        --mistica-color-buttonPrimaryBackgroundPressed: var(--mistica-telefonica-empresas-telefonicaBlue70);
+        --mistica-color-buttonPrimaryBackgroundHover: var(--mistica-telefonica-empresas-telefonicaBlue70);
+        --mistica-color-buttonPrimaryBackgroundInversePressed: var(--mistica-telefonica-empresas-telefonicaBlue10);
+        --mistica-color-buttonSecondaryBackgroundPressed: var(--mistica-telefonica-empresas-telefonicaBlue10);
+        --mistica-color-buttonSecondaryBorder: var(--mistica-telefonica-empresas-telefonicaBlue);
+        --mistica-color-buttonSecondaryBackgroundHover: var(--mistica-telefonica-empresas-telefonicaBlue10);
+        --mistica-color-buttonSecondaryBorderPressed: var(--mistica-telefonica-empresas-telefonicaBlue70);
+        --mistica-color-buttonSecondaryBorderInverse: var(--mistica-telefonica-empresas-white);
+        --mistica-color-buttonSecondaryBorderInversePressed: var(--mistica-telefonica-empresas-white);
+        --mistica-color-buttonSecondaryBackgroundInverseHover: rgba(var(--mistica-telefonica-empresas-raw-white), 0.1);
+        --mistica-color-buttonSecondaryBackgroundInversePressed: rgba(
+            var(--mistica-telefonica-empresas-raw-white),
+            0.1
+        );
+        --mistica-color-textButtonPrimary: var(--mistica-telefonica-empresas-white);
+        --mistica-color-textButtonPrimaryInverse: var(--mistica-telefonica-empresas-telefonicaBlue);
+        --mistica-color-textButtonPrimaryInversePressed: var(--mistica-telefonica-empresas-telefonicaBlue70);
+        --mistica-color-textButtonSecondary: var(--mistica-telefonica-empresas-telefonicaBlue);
+        --mistica-color-textButtonSecondaryPressed: var(--mistica-telefonica-empresas-telefonicaBlue70);
+        --mistica-color-textButtonSecondaryInverse: var(--mistica-telefonica-empresas-white);
+        --mistica-color-textButtonSecondaryInversePressed: var(--mistica-telefonica-empresas-white);
+        --mistica-color-textLink: var(--mistica-telefonica-empresas-telefonicaBlue);
+        --mistica-color-textLinkInverse: var(--mistica-telefonica-empresas-white);
+        --mistica-color-textLinkDanger: var(--mistica-telefonica-empresas-coral60);
+        --mistica-color-textLinkSnackbar: var(--mistica-telefonica-empresas-telefonicaBlue30);
+        --mistica-color-textActivated: var(--mistica-telefonica-empresas-telefonicaBlue70);
+        --mistica-color-textBrand: var(--mistica-telefonica-empresas-telefonicaBlue70);
+        --mistica-color-inputBorder: var(--mistica-telefonica-empresas-grey5);
+        --mistica-color-inputBorderInverse: var(--mistica-telefonica-empresas-white);
+        --mistica-color-completedStep: var(--mistica-telefonica-empresas-telefonicaBlue);
+        --mistica-color-completedStepInverse: var(--mistica-telefonica-empresas-telefonicaBlue70);
+        --mistica-color-control: var(--mistica-telefonica-empresas-grey5);
+        --mistica-color-controlActivated: var(--mistica-telefonica-empresas-telefonicaBlue);
+        --mistica-color-controlInverse: var(--mistica-telefonica-empresas-grey1);
+        --mistica-color-controlActivatedInverse: var(--mistica-telefonica-empresas-white);
+        --mistica-color-controlError: var(--mistica-telefonica-empresas-coral60);
+        --mistica-color-barTrack: var(--mistica-telefonica-empresas-grey2);
+        --mistica-color-barTrackInverse: rgba(var(--mistica-telefonica-empresas-raw-white), 0.3);
+        --mistica-color-loadingBar: var(--mistica-telefonica-empresas-telefonicaBlue30);
+        --mistica-color-loadingBarBackground: var(--mistica-telefonica-empresas-telefonicaBlue70);
+        --mistica-color-toggleAndroidInactive: var(--mistica-telefonica-empresas-grey2);
+        --mistica-color-toggleAndroidBackgroundActive: var(--mistica-telefonica-empresas-grey2);
+        --mistica-color-iosControlKnob: var(--mistica-telefonica-empresas-white);
+        --mistica-color-controlKnobInverse: var(--mistica-telefonica-empresas-telefonicaBlue);
+        --mistica-color-divider: var(--mistica-telefonica-empresas-grey2);
+        --mistica-color-dividerInverse: rgba(var(--mistica-telefonica-empresas-raw-white), 0.2);
+        --mistica-color-navigationBarDivider: var(--mistica-telefonica-empresas-telefonicaBlue);
+        --mistica-color-badge: var(--mistica-telefonica-empresas-coral60);
+        --mistica-color-feedbackErrorBackground: var(--mistica-telefonica-empresas-coral60);
+        --mistica-color-feedbackInfoBackground: var(--mistica-telefonica-empresas-grey9);
+        --mistica-color-brand: var(--mistica-telefonica-empresas-telefonicaBlue);
+        --mistica-color-brandHigh: var(--mistica-telefonica-empresas-telefonicaBlue70);
+        --mistica-color-inverse: var(--mistica-telefonica-empresas-white);
+        --mistica-color-neutralHigh: var(--mistica-telefonica-empresas-grey9);
+        --mistica-color-neutralMedium: var(--mistica-telefonica-empresas-grey5);
+        --mistica-color-neutralMediumInverse: var(--mistica-telefonica-empresas-grey5);
+        --mistica-color-neutralLow: var(--mistica-telefonica-empresas-grey1);
+        --mistica-color-neutralLowAlternative: var(--mistica-telefonica-empresas-grey2);
+        --mistica-color-textPrimary: var(--mistica-telefonica-empresas-grey9);
+        --mistica-color-textPrimaryInverse: var(--mistica-telefonica-empresas-white);
+        --mistica-color-textSecondary: var(--mistica-telefonica-empresas-grey6);
+        --mistica-color-textSecondaryInverse: var(--mistica-telefonica-empresas-white);
+        --mistica-color-error: var(--mistica-telefonica-empresas-coral60);
+        --mistica-color-textError: var(--mistica-telefonica-empresas-coral60);
+        --mistica-color-textErrorInverse: var(--mistica-telefonica-empresas-white);
+        --mistica-color-success: var(--mistica-telefonica-empresas-turquoise);
+        --mistica-color-warning: var(--mistica-telefonica-empresas-yellow70);
+        --mistica-color-promo: var(--mistica-telefonica-empresas-orchid);
+        --mistica-color-highlight: var(--mistica-telefonica-empresas-coral30);
+        --mistica-color-successLow: var(--mistica-telefonica-empresas-turquoise10);
+        --mistica-color-warningLow: var(--mistica-telefonica-empresas-yellow15);
+        --mistica-color-errorLow: var(--mistica-telefonica-empresas-coral10);
+        --mistica-color-promoLow: var(--mistica-telefonica-empresas-orchid10);
+        --mistica-color-brandLow: var(--mistica-telefonica-empresas-telefonicaBlue10);
+        --mistica-color-successHigh: var(--mistica-telefonica-empresas-turquoise70);
+        --mistica-color-warningHigh: var(--mistica-telefonica-empresas-yellow70);
+        --mistica-color-errorHigh: var(--mistica-telefonica-empresas-coral65);
+        --mistica-color-promoHigh: var(--mistica-telefonica-empresas-orchid70);
+        --mistica-color-successHighInverse: var(--mistica-telefonica-empresas-turquoise70);
+        --mistica-color-warningHighInverse: var(--mistica-telefonica-empresas-yellow70);
+        --mistica-color-errorHighInverse: var(--mistica-telefonica-empresas-coral65);
+        --mistica-color-promoHighInverse: var(--mistica-telefonica-empresas-orchid70);
+        --mistica-color-textNavigationBarPrimary: var(--mistica-telefonica-empresas-white);
+        --mistica-color-textNavigationBarSecondary: var(--mistica-telefonica-empresas-grey1);
+        --mistica-color-textNavigationSearchBarHint: var(--mistica-telefonica-empresas-grey1);
+        --mistica-color-textNavigationSearchBarText: var(--mistica-telefonica-empresas-white);
+        --mistica-color-textAppBar: var(--mistica-telefonica-empresas-grey4);
+        --mistica-color-textAppBarSelected: var(--mistica-telefonica-empresas-telefonicaBlue70);
+        --mistica-color-customTabsBackground: var(--mistica-telefonica-empresas-telefonicaBlue70);
+        --mistica-color-tagTextPromo: var(--mistica-telefonica-empresas-orchid80);
+        --mistica-color-tagTextActive: var(--mistica-telefonica-empresas-telefonicaBlue70);
+        --mistica-color-tagTextInactive: var(--mistica-telefonica-empresas-grey6);
+        --mistica-color-tagTextInfo: var(--mistica-telefonica-empresas-telefonicaBlue70);
+        --mistica-color-tagTextSuccess: var(--mistica-telefonica-empresas-turquoise80);
+        --mistica-color-tagTextWarning: var(--mistica-telefonica-empresas-yellow80);
+        --mistica-color-tagTextError: var(--mistica-telefonica-empresas-coral65);
+        --mistica-color-tagBackgroundPromo: var(--mistica-telefonica-empresas-orchid10);
+        --mistica-color-tagBackgroundActive: var(--mistica-telefonica-empresas-grey1);
+        --mistica-color-tagBackgroundInactive: var(--mistica-telefonica-empresas-grey1);
+        --mistica-color-tagBackgroundInfo: var(--mistica-telefonica-empresas-telefonicaBlue10);
+        --mistica-color-tagBackgroundSuccess: var(--mistica-telefonica-empresas-turquoise10);
+        --mistica-color-tagBackgroundWarning: var(--mistica-telefonica-empresas-yellow15);
+        --mistica-color-tagBackgroundError: var(--mistica-telefonica-empresas-coral10);
+        --mistica-color-tagTextPromoInverse: var(--mistica-telefonica-empresas-orchid80);
+        --mistica-color-tagTextActiveInverse: var(--mistica-telefonica-empresas-telefonicaBlue70);
+        --mistica-color-tagTextInactiveInverse: var(--mistica-telefonica-empresas-grey6);
+        --mistica-color-tagTextInfoInverse: var(--mistica-telefonica-empresas-telefonicaBlue70);
+        --mistica-color-tagTextSuccessInverse: var(--mistica-telefonica-empresas-turquoise80);
+        --mistica-color-tagTextWarningInverse: var(--mistica-telefonica-empresas-yellow80);
+        --mistica-color-tagTextErrorInverse: var(--mistica-telefonica-empresas-coral65);
+        --mistica-color-tagBackgroundPromoInverse: var(--mistica-telefonica-empresas-orchid10);
+        --mistica-color-tagBackgroundActiveInverse: var(--mistica-telefonica-empresas-grey1);
+        --mistica-color-tagBackgroundInactiveInverse: var(--mistica-telefonica-empresas-grey1);
+        --mistica-color-tagBackgroundInfoInverse: var(--mistica-telefonica-empresas-telefonicaBlue10);
+        --mistica-color-tagBackgroundSuccessInverse: var(--mistica-telefonica-empresas-turquoise10);
+        --mistica-color-tagBackgroundWarningInverse: var(--mistica-telefonica-empresas-yellow15);
+        --mistica-color-tagBackgroundErrorInverse: var(--mistica-telefonica-empresas-coral10);
+        --mistica-color-cardContentOverlay: linear-gradient(
+            180deg,
+            rgba(var(--mistica-telefonica-empresas-raw-black), 0) 0%,
+            rgba(var(--mistica-telefonica-empresas-raw-black), 0.4) 30%,
+            rgba(var(--mistica-telefonica-empresas-raw-black), 0.7) 100%
+        );
+    }
+}
+
+@media (min-width: 1024px) {
+    [data-mistica-skin='telefonica-empresas'] {
+        /* Text */
+        --mistica-font-size-1: 0.875rem;
+        --mistica-line-height-1: 1.25rem;
+        --mistica-font-size-2: 1rem;
+        --mistica-line-height-2: 1.5rem;
+        --mistica-font-size-3: 1.125rem;
+        --mistica-line-height-3: 1.5rem;
+        --mistica-font-size-4: 1.25rem;
+        --mistica-line-height-4: 1.75rem;
+        --mistica-font-size-5: 1.75rem;
+        --mistica-line-height-5: 2rem;
+        --mistica-font-size-6: 2rem;
+        --mistica-line-height-6: 2.5rem;
+        --mistica-font-size-7: 2.5rem;
+        --mistica-line-height-7: 3rem;
+        --mistica-font-size-8: 3rem;
+        --mistica-line-height-8: 3.5rem;
+        --mistica-font-size-9: 3.5rem;
+        --mistica-line-height-9: 4rem;
+        --mistica-font-size-10: 4rem;
+        --mistica-line-height-10: 4.5rem;
+        --mistica-font-size-cardTitle: 1.5rem;
+        --mistica-line-height-cardTitle: 1.75rem;
+
+        --mistica-font-size-tabsLabel: 1.125rem;
+        --mistica-line-height-tabsLabel: 1.5rem;
+
+        --mistica-font-size-title3: 1.75rem;
+        --mistica-line-height-title3: 2rem;
+    }
+}

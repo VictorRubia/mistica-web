@@ -12,6 +12,7 @@ import {
     O2_SKIN,
     O2_NEW_SKIN,
     TELEFONICA_SKIN,
+    TELEFONICA_EMPRESAS_SKIN,
     BLAU_SKIN,
     TU_SKIN,
     skinVars,
@@ -35,6 +36,7 @@ const getSkin = (searchParams: URLSearchParams) => {
         VIVO_SKIN,
         VIVO_NEW_SKIN,
         TELEFONICA_SKIN,
+        TELEFONICA_EMPRESAS_SKIN,
         BLAU_SKIN,
         TU_SKIN,
         ESIMFLAG_SKIN,
@@ -120,7 +122,7 @@ const MisticaThemeProvider = ({Story, context}): React.ReactElement => {
                 <ThemeContextProvider theme={getTheme(skin as string, platform, colorScheme)}>
                     <OverscrollColorProvider>
                         {skin === VIVO_NEW_SKIN && <style>{`body {font-family: "Vivo Type"}`}</style>}
-                        {(skin === TELEFONICA_SKIN || skin === TU_SKIN) && (
+                        {(skin === TELEFONICA_SKIN || skin === TELEFONICA_EMPRESAS_SKIN || skin === TU_SKIN) && (
                             <style>{`body {font-family: "Telefonica Sans"}`}</style>
                         )}
                         {(skin === O2_SKIN ||

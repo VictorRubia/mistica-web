@@ -9,6 +9,7 @@ const SKINS: Array<KnownSkinName> = [
     'Vivo',
     'Vivo-new',
     'Telefonica',
+    'Telefonica-empresas',
     'Blau',
     'Tu',
     'Esimflag',

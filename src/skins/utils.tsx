@@ -2,6 +2,7 @@ import * as React from 'react';
 import {
     BLAU_SKIN,
     TELEFONICA_SKIN,
+    TELEFONICA_EMPRESAS_SKIN,
     VIVO_SKIN,
     O2_SKIN,
     O2_NEW_SKIN,
@@ -12,6 +13,7 @@ import {
 } from './constants';
 import {getBlauSkin} from './blau';
 import {getTelefonicaSkin} from './telefonica';
+import {getTelefonicaEmpresasSkin} from './telefonica-empresas';
 import {getVivoSkin} from './vivo';
 import {getVivoNewSkin} from './vivo-new';
 import {getO2Skin} from './o2';
@@ -28,6 +30,8 @@ export const getSkinByName = (name: KnownSkinName, variant?: SkinVariant): Known
             return getBlauSkin(variant);
         case TELEFONICA_SKIN:
             return getTelefonicaSkin(variant);
+        case TELEFONICA_EMPRESAS_SKIN:
+            return getTelefonicaEmpresasSkin(variant);
         case VIVO_SKIN:
             return getVivoSkin(variant);
         case VIVO_NEW_SKIN:

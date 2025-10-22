@@ -55,6 +55,14 @@ const TelefonicaLogoImage = React.lazy(
         )
 );
 
+const TelefonicaEmpresasLogoImage = React.lazy(
+    () =>
+        import(
+            /* webpackChunkName: "logo-telefonica-empresas" */
+            './logo-telefonica-empresas'
+        )
+);
+
 const BlauLogoImage = React.lazy(
     () =>
         import(
@@ -134,6 +142,16 @@ const LogoBase = ({size, skinName, type = 'isotype', color}: LogoBaseProps): JSX
         case 'Telefonica':
             return (
                 <TelefonicaLogoImage
+                    size={size}
+                    type={type}
+                    isDarkMode={isDarkMode}
+                    isInverse={isInverse}
+                    color={color}
+                />
+            );
+        case 'Telefonica-empresas':
+            return (
+                <TelefonicaEmpresasLogoImage
                     size={size}
                     type={type}
                     isDarkMode={isDarkMode}
@@ -282,6 +300,17 @@ export const TelefonicaLogo = ({
 }: LogoProps): JSX.Element => (
     <MaybeTouchableLogo size={size} {...props}>
         <LogoBase skinName="Telefonica" type={type} size={size} color={color} />
+    </MaybeTouchableLogo>
+);
+
+export const TelefonicaEmpresasLogo = ({
+    size = DEFAULT_HEIGHT_PX,
+    type = 'isotype',
+    color,
+    ...props
+}: LogoProps): JSX.Element => (
+    <MaybeTouchableLogo size={size} {...props}>
+        <LogoBase skinName="Telefonica-empresas" type={type} size={size} color={color} />
     </MaybeTouchableLogo>
 );
 

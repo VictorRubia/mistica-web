@@ -4,6 +4,7 @@ export const O2_NEW_SKIN = 'O2-new';
 export const VIVO_SKIN = 'Vivo';
 export const VIVO_NEW_SKIN = 'Vivo-new';
 export const TELEFONICA_SKIN = 'Telefonica';
+export const TELEFONICA_EMPRESAS_SKIN = 'Telefonica-empresas';
 export const BLAU_SKIN = 'Blau';
 export const TU_SKIN = 'Tu';
 export const ESIMFLAG_SKIN = 'Esimflag';

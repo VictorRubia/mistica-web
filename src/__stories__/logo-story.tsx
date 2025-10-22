@@ -5,6 +5,7 @@ import {
     MovistarLogo,
     O2Logo,
     TelefonicaLogo,
+    TelefonicaEmpresasLogo,
     VivoLogo,
     TuLogo,
     O2NewLogo,
@@ -34,7 +35,7 @@ type Args = {
     inverse: boolean;
     action: 'none' | 'onPress' | 'href' | 'to';
     forceBrandLogo: boolean;
-    brand: 'Movistar' | 'O2' | 'O2-new' | 'Vivo' | 'Telefonica' | 'Blau' | 'Tu' | 'Esimflag';
+    brand: 'Movistar' | 'O2' | 'O2-new' | 'Vivo' | 'Telefonica' | 'Telefonica-empresas' | 'Blau' | 'Tu' | 'Esimflag';
     color: (typeof COLOR_OPTIONS)[number];
 };
 
@@ -78,17 +79,20 @@ export const Default: StoryComponent<Args> = ({
         color: color === 'default' ? undefined : colorValues[color as never] || color || undefined,
     };
 
-    const CurrentLogo = {
+    const logoMap = {
         default: Logo,
         Movistar: MovistarLogo,
         Vivo: VivoLogo,
         O2: O2Logo,
         'O2-new': O2NewLogo,
         Telefonica: TelefonicaLogo,
+        'Telefonica-empresas': TelefonicaEmpresasLogo,
         Blau: BlauLogo,
         Tu: TuLogo,
         Esimflag: EsimflagLogo,
-    }[forceBrandLogo ? brand : 'default'];
+    } as const;
+    
+    const CurrentLogo = logoMap[forceBrandLogo ? brand : 'default'];
 
     return (
         <ResponsiveLayout isInverse={inverse} fullWidth>
@@ -113,7 +117,7 @@ Default.args = {
 
 Default.argTypes = {
     brand: {
-        options: ['Movistar', 'O2', 'O2-new', 'Vivo', 'Telefonica', 'Blau', 'Tu', 'Esimflag'],
+        options: ['Movistar', 'O2', 'O2-new', 'Vivo', 'Telefonica', 'Telefonica-empresas', 'Blau', 'Tu', 'Esimflag'],
         control: {type: 'select'},
         if: {arg: 'forceBrandLogo'},
     },

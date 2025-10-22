@@ -12,6 +12,7 @@ const AVAILABLE_SKINS = [
     'Vivo',
     'Vivo-new',
     'Telefonica',
+    'Telefonica-empresas',
     'Blau',
     'Tu',
     'Esimflag',

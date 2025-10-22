@@ -12,6 +12,7 @@ export type KnownSkinName =
     | 'Vivo'
     | 'Vivo-new'
     | 'Telefonica'
+    | 'Telefonica-empresas'
     | 'Blau'
     | 'Tu'
     | 'Esimflag';
