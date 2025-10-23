@@ -1,0 +1,12 @@
+export declare const chipWrapper: string;
+export declare const wrappedContent: string;
+export declare const chipVariants: Record<"default" | "active" | "overAlternative" | "navigationActive" | "navigationActiveInverse", string>;
+export declare const interactive: string;
+export declare const button: string;
+export declare const interactiveChipOverlay: string;
+export declare const icon: string;
+export declare const iconNavigation: string;
+export declare const iconNavigationInverse: string;
+export declare const iconActive: string;
+export declare const leftPadding: Record<"default" | "withIcon", string>;
+export declare const rightPadding: Record<"default" | "withIcon", string>;

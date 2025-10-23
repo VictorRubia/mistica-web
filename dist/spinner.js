@@ -1,0 +1,150 @@
+"use client";
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+Object.defineProperty(exports, "default", {
+    enumerable: true,
+    get: function() {
+        return P;
+    }
+});
+const _jsxruntime = require("react/jsx-runtime");
+const _platform = require("./utils/platform.js");
+const _fadein = /*#__PURE__*/ _interop_require_default(require("./fade-in.js"));
+const _hooks = require("./hooks.js");
+const _spinnercssmistica = require("./spinner.css-mistica.js");
+const _skincontractcssmistica = require("./skins/skin-contract.css-mistica.js");
+const _themevariantcontext = require("./theme-variant-context.js");
+const _texttokens = require("./text-tokens.js");
+const _screenreaderonly = /*#__PURE__*/ _interop_require_default(require("./screen-reader-only.js"));
+function _interop_require_default(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+function _define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function _object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            _define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+const S = (param)=>{
+    let { color: a, delay: i = "500ms", size: s = 24, style: l, rolePresentation: n, "aria-hidden": m, "aria-label": d } = param;
+    const { texts: h, platformOverrides: c, t: f } = (0, _hooks.useTheme)(), v = (0, _themevariantcontext.useIsInverseOrMediaVariant)();
+    a = a || (v ? _skincontractcssmistica.vars.colors.controlActivatedInverse : _skincontractcssmistica.vars.colors.controlActivated);
+    const t = d || h.loading || f(_texttokens.loading), o = (0, _platform.getPlatform)(c) === "ios" ? /* @__PURE__ */ (0, _jsxruntime.jsx)("svg", {
+        className: _spinnercssmistica.spinnerIos,
+        height: s,
+        style: _object_spread({}, l),
+        role: "progressbar",
+        "aria-live": "polite",
+        "aria-label": t,
+        "aria-hidden": m || n,
+        viewBox: "0 0 30 30",
+        width: s,
+        children: /* @__PURE__ */ (0, _jsxruntime.jsxs)("g", {
+            role: "presentation",
+            children: [
+                /* @__PURE__ */ (0, _jsxruntime.jsx)("path", {
+                    className: _spinnercssmistica.spinnerIosSvgPath,
+                    fill: a,
+                    d: "M14 1.5C14 0.671573 14.6716 0 15.5 0C16.3284 0 17 0.671573 17 1.5V8.5C17 9.32843 16.3284 10 15.5 10C14.6716 10 14 9.32843 14 8.5V1.5Z"
+                }),
+                /* @__PURE__ */ (0, _jsxruntime.jsx)("path", {
+                    className: _spinnercssmistica.spinnerIosSvgPath,
+                    fill: a,
+                    d: "M21.182 11.1317C20.5962 11.7175 19.6464 11.7175 19.0607 11.1317C18.4749 10.5459 18.4749 9.59619 19.0607 9.01041L24.0104 4.06066C24.5962 3.47487 25.5459 3.47487 26.1317 4.06066C26.7175 4.64645 26.7175 5.59619 26.1317 6.18198L21.182 11.1317Z"
+                }),
+                /* @__PURE__ */ (0, _jsxruntime.jsx)("path", {
+                    className: _spinnercssmistica.spinnerIosSvgPath,
+                    fill: a,
+                    d: "M28.5 13C29.3284 13 30 13.6716 30 14.5C30 15.3284 29.3284 16 28.5 16H21.5C20.6716 16 20 15.3284 20 14.5C20 13.6716 20.6716 13 21.5 13H28.5Z"
+                }),
+                /* @__PURE__ */ (0, _jsxruntime.jsx)("path", {
+                    className: _spinnercssmistica.spinnerIosSvgPath,
+                    fill: a,
+                    d: "M19.0607 20.182C18.4749 19.5962 18.4749 18.6464 19.0607 18.0607C19.6464 17.4749 20.5962 17.4749 21.182 18.0607L26.1317 23.0104C26.7175 23.5962 26.7175 24.5459 26.1317 25.1317C25.5459 25.7175 24.5962 25.7175 24.0104 25.1317L19.0607 20.182Z"
+                }),
+                /* @__PURE__ */ (0, _jsxruntime.jsx)("path", {
+                    className: _spinnercssmistica.spinnerIosSvgPath,
+                    fill: a,
+                    d: "M14 21.5C14 20.6716 14.6716 20 15.5 20C16.3284 20 17 20.6716 17 21.5V28.5C17 29.3284 16.3284 30 15.5 30C14.6716 30 14 29.3284 14 28.5V21.5Z"
+                }),
+                /* @__PURE__ */ (0, _jsxruntime.jsx)("path", {
+                    className: _spinnercssmistica.spinnerIosSvgPath,
+                    fill: a,
+                    d: "M7.18198 25.1317C6.59619 25.7175 5.64645 25.7175 5.06066 25.1317C4.47487 24.5459 4.47487 23.5962 5.06066 23.0104L10.0104 18.0607C10.5962 17.4749 11.5459 17.4749 12.1317 18.0607C12.7175 18.6464 12.7175 19.5962 12.1317 20.182L7.18198 25.1317Z"
+                }),
+                /* @__PURE__ */ (0, _jsxruntime.jsx)("path", {
+                    className: _spinnercssmistica.spinnerIosSvgPath,
+                    fill: a,
+                    d: "M8.5 13C9.32843 13 10 13.6716 10 14.5C10 15.3284 9.32843 16 8.5 16H1.5C0.671573 16 0 15.3284 0 14.5C0 13.6716 0.671573 13 1.5 13H8.5Z"
+                }),
+                /* @__PURE__ */ (0, _jsxruntime.jsx)("path", {
+                    className: _spinnercssmistica.spinnerIosSvgPath,
+                    fill: a,
+                    d: "M5.06066 6.18198C4.47487 5.59619 4.47487 4.64645 5.06066 4.06066C5.64645 3.47487 6.59619 3.47487 7.18198 4.06066L12.1317 9.01041C12.7175 9.59619 12.7175 10.5459 12.1317 11.1317C11.5459 11.7175 10.5962 11.7175 10.0104 11.1317L5.06066 6.18198Z"
+                })
+            ]
+        })
+    }) : /* @__PURE__ */ (0, _jsxruntime.jsxs)("div", {
+        "aria-hidden": m || n,
+        "aria-live": "polite",
+        children: [
+            /* @__PURE__ */ (0, _jsxruntime.jsx)(_screenreaderonly.default, {
+                children: /* @__PURE__ */ (0, _jsxruntime.jsx)("span", {
+                    children: t
+                })
+            }),
+            /* @__PURE__ */ (0, _jsxruntime.jsx)("svg", {
+                role: "progressbar",
+                "aria-label": t,
+                className: _spinnercssmistica.spinnerDefault,
+                height: s,
+                style: _object_spread({}, l),
+                viewBox: "0 0 66 66",
+                width: s,
+                children: /* @__PURE__ */ (0, _jsxruntime.jsx)("circle", {
+                    className: _spinnercssmistica.spinnerDefaultPath,
+                    cx: "33",
+                    cy: "33",
+                    fill: "none",
+                    r: "30",
+                    role: "presentation",
+                    stroke: a,
+                    strokeWidth: "6"
+                })
+            })
+        ]
+    });
+    return i === "0" || i === "0s" || i === "0ms" ? o : /* @__PURE__ */ (0, _jsxruntime.jsx)(_fadein.default, {
+        delay: i,
+        dataAttributes: {
+            "component-name": "Spinner"
+        },
+        children: o
+    });
+}, P = S;

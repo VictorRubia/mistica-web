@@ -1,0 +1,111 @@
+"use client";
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+Object.defineProperty(exports, "default", {
+    enumerable: true,
+    get: function() {
+        return v;
+    }
+});
+const _jsxruntime = require("react/jsx-runtime");
+const _themevariantcontext = require("../../theme-variant-context.js");
+const _skincontractcssmistica = require("../../skins/skin-contract.css-mistica.js");
+function _define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function _object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            _define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+function ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        if (enumerableOnly) {
+            symbols = symbols.filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+            });
+        }
+        keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function _object_spread_props(target, source) {
+    source = source != null ? source : {};
+    if (Object.getOwnPropertyDescriptors) {
+        Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+        ownKeys(Object(source)).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+function _object_without_properties(source, excluded) {
+    if (source == null) return {};
+    var target = _object_without_properties_loose(source, excluded);
+    var key, i;
+    if (Object.getOwnPropertySymbols) {
+        var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+        for(i = 0; i < sourceSymbolKeys.length; i++){
+            key = sourceSymbolKeys[i];
+            if (excluded.indexOf(key) >= 0) continue;
+            if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+            target[key] = source[key];
+        }
+    }
+    return target;
+}
+function _object_without_properties_loose(source, excluded) {
+    if (source == null) return {};
+    var target = {};
+    var sourceKeys = Object.keys(source);
+    var key, i;
+    for(i = 0; i < sourceKeys.length; i++){
+        key = sourceKeys[i];
+        if (excluded.indexOf(key) >= 0) continue;
+        target[key] = source[key];
+    }
+    return target;
+}
+const i = (_param)=>{
+    var { color: e, size: o = 24 } = _param, s = _object_without_properties(_param, [
+        "color",
+        "size"
+    ]);
+    const t = (0, _themevariantcontext.useIsInverseOrMediaVariant)(), c = e !== null && e !== void 0 ? e : t ? _skincontractcssmistica.vars.colors.inverse : _skincontractcssmistica.vars.colors.neutralHigh;
+    return /* @__PURE__ */ (0, _jsxruntime.jsx)("svg", _object_spread_props(_object_spread({
+        width: o,
+        height: o,
+        viewBox: "0 0 24 24",
+        role: "presentation"
+    }, s), {
+        children: /* @__PURE__ */ (0, _jsxruntime.jsx)("path", {
+            fill: c,
+            d: "m20.175 8.049-2.73-2.732a.56.56 0 0 0-.396-.165h-.26c-.045-.938-.314-1.644-.815-2.154-.563-.566-1.37-.843-2.468-.843H6.95c-1.109 0-1.916.269-2.47.826-.555.558-.821 1.362-.821 2.465v13.11c0 1.114.272 1.927.826 2.479.552.546 1.359.812 2.465.812h6.555c1.106 0 1.913-.266 2.465-.812.557-.552.826-1.365.826-2.48v-2.45h2.67c.523 0 .874-.353.874-.877V8.443a.55.55 0 0 0-.166-.394m-1.468.114h-.285q-.587.002-.832-.246-.246-.248-.247-.832v-.286zM13.24 6.27h2.983v.812c0 1.398.801 2.199 2.199 2.199h.798v5.7c-1.056.003-4.947.003-5.98 0zm5.053 4.092a.42.42 0 0 1-.42.42h-3.286a.42.42 0 1 1 0-.84h3.286a.42.42 0 0 1 .42.42m-.42 2.06a.42.42 0 1 0 0-.841h-3.286a.42.42 0 1 0 0 .84zm.42 1.217a.42.42 0 0 1-.42.42h-3.286a.42.42 0 1 1 0-.84h3.286a.42.42 0 0 1 .42.42m-8.885 5.57q-.29-.3-.289-.81c0-.698.415-1.115 1.112-1.115s1.112.417 1.112 1.115q-.002.513-.288.81c-.19.195-.485.305-.826.305-.342 0-.628-.107-.821-.306"
+        })
+    }));
+}, v = i;

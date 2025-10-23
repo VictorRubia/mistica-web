@@ -1,0 +1,547 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+function _export(target, all) {
+    for(var name in all)Object.defineProperty(target, name, {
+        enumerable: true,
+        get: all[name]
+    });
+}
+_export(exports, {
+    getTelefonicaEmpresasSkin: function() {
+        return i;
+    },
+    palette: function() {
+        return e;
+    }
+});
+const _constants = require("./constants.js");
+const _color = require("../utils/color.js");
+const e = {
+    telefonicaBlue: "#0066FF",
+    telefonicaBlue10: "#E5F0FF",
+    telefonicaBlue20: "#B2D1FF",
+    telefonicaBlue30: "#80B3FF",
+    telefonicaBlue70: "#0356C9",
+    telefonicaBlue80: "#002E73",
+    ambar: "#EAC344",
+    ambar10: "#FDF9EC",
+    ambar40: "#F0D57C",
+    ambar70: "#69581F",
+    yellow: "#e4c35c",
+    yellow15: "#fcf7db",
+    yellow40: "#f3e996",
+    yellow70: "#a7863e",
+    yellow80: "#473515",
+    coral: "#d6786b",
+    coral10: "#f9eeed",
+    coral30: "#f2b1a5",
+    coral60: "#D22A1E",
+    coral65: "#C82C1E",
+    coral80: "#843c34",
+    coral90: "#491818",
+    orchid: "#b86be8",
+    orchid10: "#F8F0FD",
+    orchid40: "#CD97EF",
+    orchid70: "#7f258e",
+    orchid80: "#471551",
+    turquoise: "#75c0c7",
+    turquoise10: "#ebffff",
+    turquoise40: "#9ED3D8",
+    turquoise70: "#528889",
+    turquoise80: "#253d3c",
+    grey1: "#F7F7FF",
+    grey2: "#D1D5E4",
+    grey3: "#B0B6CA",
+    grey4: "#8f97af",
+    grey5: "#6E7894",
+    grey6: "#58617A",
+    grey7: "#414B61",
+    grey8: "#2B3447",
+    grey9: "#031A34",
+    white: "#FFFFFF",
+    black: "#000000",
+    darkModeBlack: "#000522",
+    darkModeGrey: "#00182F",
+    darkModeGrey6: "#00264D",
+    darkModeTelefonicaBlue: "#227AFF"
+}, i = ()=>({
+        name: _constants.TELEFONICA_EMPRESAS_SKIN,
+        colors: {
+            appBarBackground: e.white,
+            background: e.white,
+            backgroundContainer: e.white,
+            backgroundContainerError: e.coral10,
+            backgroundContainerHover: (0, _color.applyAlpha)(e.telefonicaBlue70, 0.05),
+            backgroundContainerPressed: (0, _color.applyAlpha)(e.telefonicaBlue70, 0.08),
+            backgroundContainerBrand: e.telefonicaBlue,
+            backgroundContainerBrandHover: (0, _color.applyAlpha)(e.darkModeBlack, 0.2),
+            backgroundContainerBrandPressed: (0, _color.applyAlpha)(e.darkModeBlack, 0.4),
+            backgroundContainerBrandOverInverse: e.telefonicaBlue70,
+            backgroundContainerAlternative: e.grey1,
+            backgroundBrand: e.telefonicaBlue,
+            backgroundBrandSecondary: e.telefonicaBlue,
+            backgroundOverlay: (0, _color.applyAlpha)(e.grey6, 0.8),
+            backgroundSkeleton: e.grey2,
+            backgroundSkeletonInverse: e.telefonicaBlue70,
+            navigationBarBackground: e.telefonicaBlue,
+            backgroundAlternative: e.grey1,
+            backgroundBrandTop: e.telefonicaBlue,
+            backgroundBrandBottom: e.telefonicaBlue,
+            skeletonWave: e.grey2,
+            borderLow: e.grey1,
+            border: e.grey2,
+            borderHigh: e.grey5,
+            borderSelected: e.telefonicaBlue,
+            coverBackgroundHover: (0, _color.applyAlpha)(e.darkModeBlack, 0.25),
+            coverBackgroundPressed: (0, _color.applyAlpha)(e.darkModeBlack, 0.35),
+            buttonDangerBackground: e.coral60,
+            buttonDangerBackgroundPressed: e.coral65,
+            buttonDangerBackgroundHover: e.coral65,
+            buttonLinkDangerBackgroundPressed: e.coral10,
+            buttonLinkDangerBackgroundInverse: e.white,
+            buttonLinkDangerBackgroundInversePressed: e.coral10,
+            buttonLinkBackgroundPressed: e.grey1,
+            buttonLinkBackgroundInversePressed: (0, _color.applyAlpha)(e.white, 0.08),
+            buttonPrimaryBackground: e.telefonicaBlue,
+            buttonPrimaryBackgroundInverse: e.white,
+            buttonPrimaryBackgroundPressed: e.telefonicaBlue70,
+            buttonPrimaryBackgroundHover: e.telefonicaBlue70,
+            buttonPrimaryBackgroundInversePressed: e.telefonicaBlue10,
+            buttonSecondaryBorder: e.telefonicaBlue,
+            buttonSecondaryBorderPressed: e.telefonicaBlue70,
+            buttonSecondaryBackgroundHover: e.telefonicaBlue10,
+            buttonSecondaryBackgroundPressed: e.telefonicaBlue10,
+            buttonSecondaryBorderInverse: e.white,
+            buttonSecondaryBorderInversePressed: e.white,
+            buttonSecondaryBackgroundInverseHover: (0, _color.applyAlpha)(e.white, 0.1),
+            buttonSecondaryBackgroundInversePressed: (0, _color.applyAlpha)(e.white, 0.1),
+            textButtonPrimary: e.white,
+            textButtonPrimaryInverse: e.telefonicaBlue,
+            textButtonPrimaryInversePressed: e.telefonicaBlue70,
+            textButtonSecondary: e.telefonicaBlue,
+            textButtonSecondaryPressed: e.telefonicaBlue70,
+            textButtonSecondaryInverse: e.white,
+            textButtonSecondaryInversePressed: e.white,
+            textLink: e.telefonicaBlue,
+            textLinkInverse: e.white,
+            textLinkDanger: e.coral60,
+            textLinkSnackbar: e.telefonicaBlue30,
+            textActivated: e.telefonicaBlue70,
+            textBrand: e.telefonicaBlue70,
+            inputBorder: e.grey5,
+            inputBorderInverse: e.white,
+            completedStep: e.telefonicaBlue,
+            completedStepInverse: e.telefonicaBlue70,
+            control: e.grey5,
+            controlActivated: e.telefonicaBlue,
+            controlInverse: e.grey1,
+            controlActivatedInverse: e.white,
+            controlError: e.coral60,
+            barTrack: e.grey2,
+            barTrackInverse: (0, _color.applyAlpha)(e.white, 0.3),
+            loadingBar: e.telefonicaBlue30,
+            loadingBarBackground: e.telefonicaBlue70,
+            toggleAndroidInactive: e.grey2,
+            toggleAndroidBackgroundActive: e.grey2,
+            iosControlKnob: e.white,
+            controlKnobInverse: e.telefonicaBlue,
+            divider: e.grey2,
+            dividerInverse: (0, _color.applyAlpha)(e.white, 0.2),
+            navigationBarDivider: e.telefonicaBlue,
+            badge: e.coral60,
+            feedbackErrorBackground: e.coral60,
+            feedbackInfoBackground: e.grey9,
+            brand: e.telefonicaBlue,
+            brandHigh: e.telefonicaBlue70,
+            inverse: e.white,
+            neutralHigh: e.grey9,
+            neutralMedium: e.grey5,
+            neutralMediumInverse: e.grey5,
+            neutralLow: e.grey1,
+            neutralLowAlternative: e.grey2,
+            textPrimary: e.grey9,
+            textPrimaryInverse: e.white,
+            textSecondary: e.grey6,
+            textSecondaryInverse: e.white,
+            error: e.coral60,
+            textError: e.coral60,
+            textErrorInverse: e.white,
+            success: e.turquoise,
+            warning: e.yellow70,
+            promo: e.orchid,
+            highlight: e.coral30,
+            successLow: e.turquoise10,
+            warningLow: e.yellow15,
+            errorLow: e.coral10,
+            promoLow: e.orchid10,
+            brandLow: e.telefonicaBlue10,
+            successHigh: e.turquoise70,
+            warningHigh: e.yellow70,
+            errorHigh: e.coral65,
+            promoHigh: e.orchid70,
+            successHighInverse: e.turquoise70,
+            warningHighInverse: e.yellow70,
+            errorHighInverse: e.coral65,
+            promoHighInverse: e.orchid70,
+            textNavigationBarPrimary: e.white,
+            textNavigationBarSecondary: e.grey1,
+            textNavigationSearchBarHint: e.grey1,
+            textNavigationSearchBarText: e.white,
+            textAppBar: e.grey4,
+            textAppBarSelected: e.telefonicaBlue70,
+            customTabsBackground: e.telefonicaBlue70,
+            tagTextPromo: e.orchid80,
+            tagTextActive: e.telefonicaBlue70,
+            tagTextInactive: e.grey6,
+            tagTextInfo: e.telefonicaBlue70,
+            tagTextSuccess: e.turquoise80,
+            tagTextWarning: e.yellow80,
+            tagTextError: e.coral65,
+            tagBackgroundPromo: e.orchid10,
+            tagBackgroundActive: e.grey1,
+            tagBackgroundInactive: e.grey1,
+            tagBackgroundInfo: e.telefonicaBlue10,
+            tagBackgroundSuccess: e.turquoise10,
+            tagBackgroundWarning: e.yellow15,
+            tagBackgroundError: e.coral10,
+            tagTextPromoInverse: e.orchid80,
+            tagTextActiveInverse: e.telefonicaBlue70,
+            tagTextInactiveInverse: e.grey6,
+            tagTextInfoInverse: e.telefonicaBlue70,
+            tagTextSuccessInverse: e.turquoise80,
+            tagTextWarningInverse: e.yellow80,
+            tagTextErrorInverse: e.coral65,
+            tagBackgroundPromoInverse: e.orchid10,
+            tagBackgroundActiveInverse: e.grey1,
+            tagBackgroundInactiveInverse: e.grey1,
+            tagBackgroundInfoInverse: e.telefonicaBlue10,
+            tagBackgroundSuccessInverse: e.turquoise10,
+            tagBackgroundWarningInverse: e.yellow15,
+            tagBackgroundErrorInverse: e.coral10,
+            cardContentOverlay: `linear-gradient(180deg, ${(0, _color.applyAlpha)(e.black, 0)} 0%, ${(0, _color.applyAlpha)(e.black, 0.4)} 30%, ${(0, _color.applyAlpha)(e.black, 0.7)} 100%)`
+        },
+        darkModeColors: {
+            background: e.darkModeBlack,
+            backgroundAlternative: e.darkModeBlack,
+            backgroundBrand: e.darkModeBlack,
+            backgroundBrandSecondary: e.darkModeBlack,
+            backgroundContainer: e.darkModeGrey,
+            backgroundContainerError: e.darkModeGrey,
+            backgroundContainerHover: (0, _color.applyAlpha)(e.telefonicaBlue70, 0.05),
+            backgroundContainerPressed: (0, _color.applyAlpha)(e.telefonicaBlue70, 0.08),
+            backgroundContainerBrand: e.darkModeGrey,
+            backgroundContainerBrandHover: (0, _color.applyAlpha)(e.white, 0.03),
+            backgroundContainerBrandPressed: (0, _color.applyAlpha)(e.white, 0.05),
+            backgroundContainerBrandOverInverse: e.darkModeGrey,
+            backgroundContainerAlternative: e.darkModeGrey,
+            backgroundOverlay: (0, _color.applyAlpha)(e.darkModeGrey, 0.8),
+            backgroundSkeleton: e.grey8,
+            backgroundSkeletonInverse: e.grey8,
+            backgroundBrandTop: e.darkModeBlack,
+            backgroundBrandBottom: e.darkModeBlack,
+            appBarBackground: e.darkModeGrey,
+            navigationBarBackground: e.darkModeBlack,
+            skeletonWave: e.grey8,
+            borderLow: e.darkModeBlack,
+            border: e.darkModeGrey,
+            borderHigh: e.grey5,
+            borderSelected: e.darkModeTelefonicaBlue,
+            coverBackgroundHover: (0, _color.applyAlpha)(e.darkModeBlack, 0.25),
+            coverBackgroundPressed: (0, _color.applyAlpha)(e.darkModeBlack, 0.35),
+            buttonDangerBackground: e.coral60,
+            buttonDangerBackgroundPressed: e.coral65,
+            buttonDangerBackgroundHover: e.coral65,
+            buttonLinkDangerBackgroundPressed: (0, _color.applyAlpha)(e.coral60, 0.16),
+            buttonLinkDangerBackgroundInverse: (0, _color.applyAlpha)(e.coral60, 0.16),
+            buttonLinkDangerBackgroundInversePressed: (0, _color.applyAlpha)(e.coral60, 0.16),
+            buttonLinkBackgroundPressed: (0, _color.applyAlpha)(e.telefonicaBlue30, 0.16),
+            buttonLinkBackgroundInversePressed: (0, _color.applyAlpha)(e.telefonicaBlue30, 0.16),
+            buttonPrimaryBackground: e.telefonicaBlue,
+            buttonPrimaryBackgroundInverse: e.white,
+            buttonPrimaryBackgroundPressed: e.telefonicaBlue70,
+            buttonPrimaryBackgroundHover: e.telefonicaBlue70,
+            buttonPrimaryBackgroundInversePressed: e.telefonicaBlue10,
+            buttonSecondaryBackgroundPressed: (0, _color.applyAlpha)(e.white, 0.15),
+            buttonSecondaryBorder: e.white,
+            buttonSecondaryBackgroundHover: (0, _color.applyAlpha)(e.white, 0.15),
+            buttonSecondaryBorderPressed: e.white,
+            buttonSecondaryBorderInverse: e.white,
+            buttonSecondaryBorderInversePressed: e.white,
+            buttonSecondaryBackgroundInverseHover: (0, _color.applyAlpha)(e.white, 0.15),
+            buttonSecondaryBackgroundInversePressed: (0, _color.applyAlpha)(e.white, 0.15),
+            textButtonPrimary: e.white,
+            textButtonPrimaryInverse: e.telefonicaBlue,
+            textButtonPrimaryInversePressed: e.telefonicaBlue70,
+            textButtonSecondary: e.white,
+            textButtonSecondaryPressed: e.white,
+            textButtonSecondaryInverse: e.white,
+            textButtonSecondaryInversePressed: e.white,
+            textLink: e.darkModeTelefonicaBlue,
+            textLinkInverse: e.darkModeTelefonicaBlue,
+            textLinkDanger: e.coral,
+            textLinkSnackbar: e.darkModeTelefonicaBlue,
+            textActivated: e.telefonicaBlue30,
+            textBrand: e.telefonicaBlue30,
+            inputBorder: e.grey5,
+            inputBorderInverse: e.grey5,
+            completedStep: e.telefonicaBlue,
+            completedStepInverse: e.telefonicaBlue,
+            control: e.grey5,
+            controlActivated: e.darkModeTelefonicaBlue,
+            controlInverse: e.grey5,
+            controlActivatedInverse: e.darkModeTelefonicaBlue,
+            controlError: e.coral,
+            barTrack: e.darkModeGrey6,
+            barTrackInverse: e.darkModeGrey6,
+            loadingBar: e.darkModeTelefonicaBlue,
+            loadingBarBackground: e.grey6,
+            toggleAndroidInactive: e.grey2,
+            toggleAndroidBackgroundActive: e.telefonicaBlue20,
+            iosControlKnob: e.grey1,
+            controlKnobInverse: e.grey1,
+            divider: (0, _color.applyAlpha)(e.white, 0.2),
+            dividerInverse: (0, _color.applyAlpha)(e.white, 0.05),
+            navigationBarDivider: e.darkModeBlack,
+            badge: e.coral60,
+            feedbackErrorBackground: e.coral65,
+            feedbackInfoBackground: e.darkModeGrey,
+            brand: e.darkModeTelefonicaBlue,
+            brandHigh: (0, _color.applyAlpha)(e.white, 0.05),
+            inverse: e.grey1,
+            neutralHigh: e.grey2,
+            neutralMedium: e.grey5,
+            neutralMediumInverse: e.grey5,
+            neutralLow: e.darkModeGrey6,
+            neutralLowAlternative: e.darkModeGrey6,
+            textPrimary: e.grey1,
+            textPrimaryInverse: e.grey1,
+            textSecondary: e.grey3,
+            textSecondaryInverse: e.grey3,
+            error: e.coral,
+            textError: e.coral,
+            textErrorInverse: e.coral,
+            success: e.turquoise,
+            warning: e.yellow,
+            promo: e.orchid,
+            highlight: e.coral30,
+            successLow: e.darkModeGrey6,
+            warningLow: e.darkModeGrey6,
+            errorLow: e.darkModeGrey6,
+            promoLow: e.darkModeGrey6,
+            brandLow: e.darkModeGrey6,
+            successHigh: e.turquoise40,
+            warningHigh: e.yellow40,
+            errorHigh: e.coral30,
+            promoHigh: e.orchid40,
+            successHighInverse: e.turquoise70,
+            warningHighInverse: e.yellow70,
+            errorHighInverse: e.coral65,
+            promoHighInverse: e.orchid70,
+            textNavigationBarPrimary: e.white,
+            textNavigationBarSecondary: e.grey4,
+            textNavigationSearchBarHint: e.grey4,
+            textNavigationSearchBarText: e.white,
+            textAppBar: e.grey2,
+            textAppBarSelected: e.white,
+            customTabsBackground: e.darkModeBlack,
+            tagTextPromo: e.orchid40,
+            tagTextActive: e.telefonicaBlue20,
+            tagTextInactive: e.grey3,
+            tagTextInfo: e.telefonicaBlue20,
+            tagTextSuccess: e.turquoise40,
+            tagTextWarning: e.yellow40,
+            tagTextError: e.coral30,
+            tagBackgroundPromo: e.orchid80,
+            tagBackgroundActive: e.telefonicaBlue80,
+            tagBackgroundInactive: e.grey8,
+            tagBackgroundInfo: e.telefonicaBlue80,
+            tagBackgroundSuccess: e.turquoise80,
+            tagBackgroundWarning: e.yellow80,
+            tagBackgroundError: e.coral90,
+            tagTextPromoInverse: e.orchid40,
+            tagTextActiveInverse: e.telefonicaBlue20,
+            tagTextInactiveInverse: e.grey3,
+            tagTextInfoInverse: e.telefonicaBlue20,
+            tagTextSuccessInverse: e.turquoise40,
+            tagTextWarningInverse: e.yellow40,
+            tagTextErrorInverse: e.coral30,
+            tagBackgroundPromoInverse: e.orchid80,
+            tagBackgroundActiveInverse: e.telefonicaBlue80,
+            tagBackgroundInactiveInverse: e.grey8,
+            tagBackgroundInfoInverse: e.telefonicaBlue80,
+            tagBackgroundSuccessInverse: e.turquoise80,
+            tagBackgroundWarningInverse: e.yellow80,
+            tagBackgroundErrorInverse: e.coral90,
+            cardContentOverlay: `linear-gradient(180deg, ${(0, _color.applyAlpha)(e.black, 0)} 0%, ${(0, _color.applyAlpha)(e.black, 0.4)} 30%, ${(0, _color.applyAlpha)(e.black, 0.7)} 100%)`
+        },
+        borderRadii: {
+            avatar: "50%",
+            bar: "0px",
+            button: "999px",
+            checkbox: "0px",
+            container: "0px",
+            indicator: "999px",
+            input: "0px",
+            legacyDisplay: "0px",
+            popup: "0px",
+            sheet: "0px",
+            mediaSmall: "0px"
+        },
+        textPresets: {
+            button: {
+                weight: "medium"
+            },
+            cardTitle: {
+                weight: "regular"
+            },
+            indicator: {
+                weight: "medium"
+            },
+            link: {
+                weight: "medium"
+            },
+            navigationBar: {
+                weight: "medium"
+            },
+            tabsLabel: {
+                lineHeight: {
+                    desktop: 24,
+                    mobile: 24
+                },
+                size: {
+                    desktop: 18,
+                    mobile: 16
+                },
+                weight: "medium"
+            },
+            text1: {
+                lineHeight: {
+                    desktop: 20,
+                    mobile: 16
+                },
+                size: {
+                    desktop: 14,
+                    mobile: 12
+                }
+            },
+            text2: {
+                lineHeight: {
+                    desktop: 24,
+                    mobile: 20
+                },
+                size: {
+                    desktop: 16,
+                    mobile: 14
+                }
+            },
+            text3: {
+                lineHeight: {
+                    desktop: 24,
+                    mobile: 24
+                },
+                size: {
+                    desktop: 18,
+                    mobile: 16
+                }
+            },
+            text4: {
+                lineHeight: {
+                    desktop: 28,
+                    mobile: 24
+                },
+                size: {
+                    desktop: 20,
+                    mobile: 18
+                }
+            },
+            text5: {
+                lineHeight: {
+                    desktop: 32,
+                    mobile: 24
+                },
+                size: {
+                    desktop: 28,
+                    mobile: 20
+                },
+                weight: "regular"
+            },
+            text6: {
+                lineHeight: {
+                    desktop: 40,
+                    mobile: 32
+                },
+                size: {
+                    desktop: 32,
+                    mobile: 24
+                },
+                weight: "regular"
+            },
+            text7: {
+                lineHeight: {
+                    desktop: 48,
+                    mobile: 32
+                },
+                size: {
+                    desktop: 40,
+                    mobile: 28
+                },
+                weight: "regular"
+            },
+            text8: {
+                lineHeight: {
+                    desktop: 56,
+                    mobile: 40
+                },
+                size: {
+                    desktop: 48,
+                    mobile: 32
+                },
+                weight: "regular"
+            },
+            text9: {
+                lineHeight: {
+                    desktop: 64,
+                    mobile: 48
+                },
+                size: {
+                    desktop: 56,
+                    mobile: 40
+                },
+                weight: "regular"
+            },
+            text10: {
+                lineHeight: {
+                    desktop: 72,
+                    mobile: 56
+                },
+                size: {
+                    desktop: 64,
+                    mobile: 48
+                },
+                weight: "regular"
+            },
+            title1: {
+                weight: "medium"
+            },
+            title2: {
+                weight: "regular"
+            },
+            title3: {
+                lineHeight: {
+                    desktop: 32,
+                    mobile: 24
+                },
+                size: {
+                    desktop: 28,
+                    mobile: 20
+                },
+                weight: "regular"
+            }
+        },
+        themeVariants: {
+            successFeedback: "inverse",
+            brandLoadingScreen: "inverse"
+        }
+    });

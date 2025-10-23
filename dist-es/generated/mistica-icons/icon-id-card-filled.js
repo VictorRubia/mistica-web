@@ -1,0 +1,102 @@
+"use client";
+function _define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function _object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            _define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+function ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        if (enumerableOnly) {
+            symbols = symbols.filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+            });
+        }
+        keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function _object_spread_props(target, source) {
+    source = source != null ? source : {};
+    if (Object.getOwnPropertyDescriptors) {
+        Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+        ownKeys(Object(source)).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+function _object_without_properties(source, excluded) {
+    if (source == null) return {};
+    var target = _object_without_properties_loose(source, excluded);
+    var key, i;
+    if (Object.getOwnPropertySymbols) {
+        var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+        for(i = 0; i < sourceSymbolKeys.length; i++){
+            key = sourceSymbolKeys[i];
+            if (excluded.indexOf(key) >= 0) continue;
+            if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+            target[key] = source[key];
+        }
+    }
+    return target;
+}
+function _object_without_properties_loose(source, excluded) {
+    if (source == null) return {};
+    var target = {};
+    var sourceKeys = Object.keys(source);
+    var key, i;
+    for(i = 0; i < sourceKeys.length; i++){
+        key = sourceKeys[i];
+        if (excluded.indexOf(key) >= 0) continue;
+        target[key] = source[key];
+    }
+    return target;
+}
+import { jsx as o } from "react/jsx-runtime";
+import { useIsInverseOrMediaVariant as s } from "../../theme-variant-context.js";
+import { vars as c } from "../../skins/skin-contract.css-mistica.js";
+const l = (_param)=>{
+    var { color: e, size: r = 24 } = _param, a = _object_without_properties(_param, [
+        "color",
+        "size"
+    ]);
+    const t = s(), i = e !== null && e !== void 0 ? e : t ? c.colors.inverse : c.colors.neutralHigh;
+    return /* @__PURE__ */ o("svg", _object_spread_props(_object_spread({
+        width: r,
+        height: r,
+        viewBox: "0 0 24 24",
+        role: "presentation"
+    }, a), {
+        children: /* @__PURE__ */ o("path", {
+            fill: i,
+            d: "M20.41 19.38H3.586c-.79 0-1.431-.67-1.431-1.49V6.103c0-.821.641-1.488 1.431-1.488h16.827c.79 0 1.431.667 1.431 1.488V17.89c-.003.82-.644 1.49-1.434 1.49m-9.392-4.986c.333 0 .602-.28.602-.627a.616.616 0 0 0-.602-.628H4.777a.614.614 0 0 0-.602.628c0 .347.271.627.602.627zm-1.4-3.978a.617.617 0 0 0-.606-.627H4.777a.617.617 0 0 0-.605.627c0 .348.272.628.605.628h4.235c.334 0 .605-.28.605-.628m6.652-2.243c-.569 0-1.014.157-1.32.465-.319.319-.478.795-.478 1.411 0 .617.16 1.09.479 1.41.305.308.75.462 1.319.462q.858-.002 1.322-.463c.32-.319.482-.795.482-1.411q-.002-.927-.482-1.412-.463-.462-1.322-.462m-1.098 4.568c-.667 0-1.216.213-1.583.61-.339.368-.515.878-.515 1.474v.625a.21.21 0 0 0 .204.213h5.992a.21.21 0 0 0 .204-.213v-.625c0-.596-.179-1.106-.518-1.473-.372-.398-.919-.61-1.585-.61z"
+        })
+    }));
+}, h = l;
+export { h as default };

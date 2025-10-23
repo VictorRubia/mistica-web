@@ -1,0 +1,32 @@
+"use client";
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+Object.defineProperty(exports, "TableActionsHeader", {
+    enumerable: true,
+    get: function() {
+        return p;
+    }
+});
+const _jsxruntime = require("react/jsx-runtime");
+const _tablecssmistica = require("./table.css-mistica.js");
+const _screenreaderonly = /*#__PURE__*/ _interop_require_default(require("./screen-reader-only.js"));
+const _hooks = require("./hooks.js");
+const _texttokens = require("./text-tokens.js");
+function _interop_require_default(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+const p = ()=>{
+    const { texts: r, t } = (0, _hooks.useTheme)();
+    return /* @__PURE__ */ (0, _jsxruntime.jsx)("th", {
+        children: /* @__PURE__ */ (0, _jsxruntime.jsx)(_screenreaderonly.default, {
+            children: /* @__PURE__ */ (0, _jsxruntime.jsx)("div", {
+                className: _tablecssmistica.actionsHeaderText,
+                children: r.tableActionsHeaderLabel || t(_texttokens.tableActionsHeaderLabel)
+            })
+        })
+    });
+};

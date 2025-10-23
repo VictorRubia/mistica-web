@@ -1,0 +1,543 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+function _export(target, all) {
+    for(var name in all)Object.defineProperty(target, name, {
+        enumerable: true,
+        get: all[name]
+    });
+}
+_export(exports, {
+    getEsimflagSkin: function() {
+        return d;
+    },
+    palette: function() {
+        return e;
+    }
+});
+const _constants = require("./constants.js");
+const _color = require("../utils/color.js");
+const e = {
+    blue: "#005CFF",
+    blue10: "#E5EFFF",
+    blue15: "#CCDEFF",
+    blue20: "#B2CEFF",
+    blue30: "#80ADFF",
+    blue55: "#004ED9",
+    blue65: "#0247BF",
+    blue80: "#0B2739",
+    blue85: "#001740",
+    grass: "#99D52A",
+    grass10: "#EBF7D4",
+    grass70: "#6B951D",
+    grass75: "#5C8019",
+    peach: "#FF9800",
+    peach10: "#FFF4D5",
+    peach75: "#995B00",
+    purple: "#A140C4",
+    purple30: "#D1A1E3",
+    purple10: "#FCEFFC",
+    purple55: "#8B3AA8",
+    blush: "#FFD2E3",
+    blush20: "#FFF1F7",
+    teal: "#2FDDEA",
+    teal10: "#D5F8FB",
+    teal75: "#197980",
+    chili: "#FA4549",
+    tomato: "#FA4549",
+    tomato10: "#FEECED",
+    tomato55: "#ED0C0C",
+    tomato60: "#BA160A",
+    tomato65: "#B61515",
+    grey1: "#F1F7FF",
+    grey2: "#E3EEFF",
+    grey3: "#CCD6E5",
+    grey4: "#828D9B",
+    grey5: "#666B73",
+    grey6: "#393C40",
+    black: "#00091A",
+    white: "#FFFFFF",
+    darkModeBlack: "#00001C",
+    darkModeGrey: "#08132B",
+    darkModeGrey6: "#14213D",
+    darkModeBlue: "#0F67FF"
+}, d = ()=>({
+        name: _constants.ESIMFLAG_SKIN,
+        colors: {
+            background: e.white,
+            backgroundAlternative: e.grey1,
+            backgroundBrand: `linear-gradient(180deg, ${e.blue55} 0%, ${e.blue} 60%, ${e.purple} 100%)`,
+            backgroundBrandSecondary: e.blue,
+            backgroundContainer: e.white,
+            backgroundContainerError: e.tomato10,
+            backgroundContainerHover: (0, _color.applyAlpha)(e.blue55, 0.05),
+            backgroundContainerPressed: (0, _color.applyAlpha)(e.blue55, 0.08),
+            backgroundContainerBrand: `linear-gradient(180deg, ${e.blue55} 0%, ${e.blue} 60%, ${e.purple} 100%)`,
+            backgroundContainerBrandHover: (0, _color.applyAlpha)(e.blue55, 0.2),
+            backgroundContainerBrandPressed: (0, _color.applyAlpha)(e.blue55, 0.4),
+            backgroundContainerBrandOverInverse: e.blue80,
+            backgroundContainerAlternative: e.grey1,
+            backgroundOverlay: (0, _color.applyAlpha)(e.black, 0.6),
+            backgroundSkeleton: e.grey2,
+            backgroundSkeletonInverse: e.blue55,
+            backgroundBrandTop: e.blue65,
+            backgroundBrandBottom: e.purple,
+            appBarBackground: e.white,
+            navigationBarBackground: e.blue55,
+            skeletonWave: e.grey2,
+            borderLow: e.grey1,
+            border: e.grey3,
+            borderHigh: e.grey5,
+            borderSelected: e.blue,
+            coverBackgroundHover: (0, _color.applyAlpha)(e.darkModeBlack, 0.25),
+            coverBackgroundPressed: (0, _color.applyAlpha)(e.darkModeBlack, 0.35),
+            buttonDangerBackground: e.tomato55,
+            buttonDangerBackgroundPressed: e.tomato65,
+            buttonDangerBackgroundHover: e.tomato60,
+            buttonLinkDangerBackgroundPressed: e.tomato10,
+            buttonLinkDangerBackgroundInverse: e.white,
+            buttonLinkDangerBackgroundInversePressed: e.tomato10,
+            buttonLinkBackgroundPressed: (0, _color.applyAlpha)(e.purple55, 0.08),
+            buttonLinkBackgroundInversePressed: (0, _color.applyAlpha)(e.white, 0.08),
+            buttonPrimaryBackground: e.blue,
+            buttonPrimaryBackgroundInverse: e.white,
+            buttonPrimaryBackgroundPressed: e.blue65,
+            buttonPrimaryBackgroundHover: e.blue55,
+            buttonPrimaryBackgroundInversePressed: e.blue15,
+            buttonSecondaryBorder: e.blue,
+            buttonSecondaryBorderPressed: e.blue55,
+            buttonSecondaryBackgroundHover: e.blue10,
+            buttonSecondaryBackgroundPressed: e.blue15,
+            buttonSecondaryBorderInverse: e.white,
+            buttonSecondaryBorderInversePressed: e.white,
+            buttonSecondaryBackgroundInverseHover: (0, _color.applyAlpha)(e.white, 0.15),
+            buttonSecondaryBackgroundInversePressed: (0, _color.applyAlpha)(e.white, 0.15),
+            textButtonPrimary: e.white,
+            textButtonPrimaryInverse: e.blue,
+            textButtonPrimaryInversePressed: e.blue55,
+            textButtonSecondary: e.blue,
+            textButtonSecondaryPressed: e.blue55,
+            textButtonSecondaryInverse: e.white,
+            textButtonSecondaryInversePressed: e.white,
+            textLink: e.purple,
+            textLinkInverse: e.white,
+            textLinkDanger: e.tomato55,
+            textLinkSnackbar: e.blue30,
+            textActivated: e.blue,
+            textBrand: e.blue,
+            inputBorder: e.grey4,
+            inputBorderInverse: e.white,
+            completedStep: e.blue,
+            completedStepInverse: e.blue80,
+            control: e.grey4,
+            controlActivated: e.blue,
+            controlInverse: e.blue20,
+            controlActivatedInverse: e.white,
+            controlError: e.tomato,
+            barTrack: e.grey3,
+            barTrackInverse: (0, _color.applyAlpha)(e.white, 0.3),
+            loadingBar: e.blue,
+            loadingBarBackground: e.grey2,
+            toggleAndroidInactive: e.grey3,
+            toggleAndroidBackgroundActive: e.blue20,
+            iosControlKnob: e.white,
+            controlKnobInverse: e.blue,
+            divider: e.grey3,
+            dividerInverse: (0, _color.applyAlpha)(e.white, 0.2),
+            navigationBarDivider: e.grey3,
+            badge: e.tomato65,
+            feedbackErrorBackground: e.tomato,
+            feedbackInfoBackground: e.blue80,
+            brand: e.blue,
+            brandHigh: e.blue55,
+            inverse: e.white,
+            neutralHigh: e.blue85,
+            neutralMedium: e.grey5,
+            neutralMediumInverse: e.grey5,
+            neutralLow: e.grey1,
+            neutralLowAlternative: e.grey2,
+            textPrimary: e.blue85,
+            textPrimaryInverse: e.white,
+            textSecondary: e.grey5,
+            textSecondaryInverse: e.blue10,
+            success: e.grass,
+            warning: e.peach,
+            error: e.tomato,
+            textError: e.tomato55,
+            textErrorInverse: e.white,
+            promo: e.purple,
+            highlight: e.teal75,
+            successLow: e.grass10,
+            warningLow: e.peach10,
+            errorLow: e.tomato10,
+            promoLow: e.purple10,
+            brandLow: e.blue10,
+            successHigh: e.grass70,
+            warningHigh: e.peach75,
+            errorHigh: e.tomato60,
+            promoHigh: e.purple,
+            successHighInverse: e.grass70,
+            warningHighInverse: e.peach75,
+            errorHighInverse: e.tomato60,
+            promoHighInverse: e.purple,
+            textNavigationBarPrimary: e.white,
+            textNavigationBarSecondary: e.blue20,
+            textNavigationSearchBarHint: e.blue20,
+            textNavigationSearchBarText: e.white,
+            textAppBar: e.grey5,
+            textAppBarSelected: e.blue55,
+            customTabsBackground: e.blue,
+            tagTextPromo: e.blue85,
+            tagTextActive: e.blue85,
+            tagTextInactive: e.grey5,
+            tagTextInfo: e.blue85,
+            tagTextSuccess: e.blue85,
+            tagTextWarning: e.blue85,
+            tagTextError: e.blue85,
+            tagBackgroundPromo: e.blush,
+            tagBackgroundActive: e.teal,
+            tagBackgroundInactive: e.grey2,
+            tagBackgroundInfo: e.purple30,
+            tagBackgroundSuccess: e.grass,
+            tagBackgroundWarning: e.peach,
+            tagBackgroundError: e.chili,
+            tagTextPromoInverse: e.purple55,
+            tagTextActiveInverse: e.teal75,
+            tagTextInactiveInverse: e.grey5,
+            tagTextInfoInverse: e.purple,
+            tagTextSuccessInverse: e.grass75,
+            tagTextWarningInverse: e.peach75,
+            tagTextErrorInverse: e.tomato65,
+            tagBackgroundPromoInverse: e.blush,
+            tagBackgroundActiveInverse: e.teal10,
+            tagBackgroundInactiveInverse: e.grey2,
+            tagBackgroundInfoInverse: e.purple10,
+            tagBackgroundSuccessInverse: e.grass10,
+            tagBackgroundWarningInverse: e.peach10,
+            tagBackgroundErrorInverse: e.tomato10,
+            cardContentOverlay: `linear-gradient(180deg, ${(0, _color.applyAlpha)(e.black, 0)} 0%, ${(0, _color.applyAlpha)(e.black, 0.4)} 30%, ${(0, _color.applyAlpha)(e.black, 0.7)} 100%)`
+        },
+        darkModeColors: {
+            background: e.darkModeBlack,
+            backgroundAlternative: e.darkModeBlack,
+            backgroundBrand: e.darkModeBlack,
+            backgroundBrandSecondary: e.darkModeBlack,
+            backgroundContainer: e.darkModeGrey,
+            backgroundContainerError: e.darkModeGrey,
+            backgroundContainerHover: (0, _color.applyAlpha)(e.white, 0.05),
+            backgroundContainerPressed: (0, _color.applyAlpha)(e.white, 0.08),
+            backgroundContainerBrand: e.darkModeGrey,
+            backgroundContainerBrandHover: (0, _color.applyAlpha)(e.white, 0.03),
+            backgroundContainerBrandPressed: (0, _color.applyAlpha)(e.white, 0.05),
+            backgroundContainerBrandOverInverse: e.darkModeGrey,
+            backgroundContainerAlternative: e.darkModeGrey,
+            backgroundOverlay: (0, _color.applyAlpha)(e.darkModeGrey, 0.8),
+            backgroundSkeleton: e.darkModeGrey6,
+            backgroundSkeletonInverse: e.darkModeGrey6,
+            backgroundBrandTop: e.darkModeBlack,
+            backgroundBrandBottom: e.darkModeBlack,
+            appBarBackground: e.darkModeGrey,
+            navigationBarBackground: e.darkModeBlack,
+            skeletonWave: e.grey6,
+            borderLow: e.darkModeBlack,
+            border: e.darkModeGrey,
+            borderHigh: e.grey5,
+            borderSelected: e.blue,
+            coverBackgroundHover: (0, _color.applyAlpha)(e.darkModeBlack, 0.25),
+            coverBackgroundPressed: (0, _color.applyAlpha)(e.darkModeBlack, 0.35),
+            buttonDangerBackground: e.tomato,
+            buttonDangerBackgroundPressed: e.tomato55,
+            buttonDangerBackgroundHover: e.tomato55,
+            buttonLinkDangerBackgroundPressed: (0, _color.applyAlpha)(e.white, 0.08),
+            buttonLinkDangerBackgroundInverse: (0, _color.applyAlpha)(e.white, 0),
+            buttonLinkDangerBackgroundInversePressed: (0, _color.applyAlpha)(e.white, 0.08),
+            buttonLinkBackgroundPressed: (0, _color.applyAlpha)(e.white, 0.08),
+            buttonLinkBackgroundInversePressed: (0, _color.applyAlpha)(e.white, 0.08),
+            buttonPrimaryBackground: e.blue,
+            buttonPrimaryBackgroundInverse: e.blue,
+            buttonPrimaryBackgroundPressed: e.blue55,
+            buttonPrimaryBackgroundHover: e.blue55,
+            buttonPrimaryBackgroundInversePressed: e.blue55,
+            buttonSecondaryBackgroundPressed: (0, _color.applyAlpha)(e.white, 0.15),
+            buttonSecondaryBorder: e.white,
+            buttonSecondaryBorderPressed: e.white,
+            buttonSecondaryBorderInverse: e.white,
+            buttonSecondaryBorderInversePressed: e.white,
+            buttonSecondaryBackgroundHover: (0, _color.applyAlpha)(e.white, 0.15),
+            buttonSecondaryBackgroundInverseHover: (0, _color.applyAlpha)(e.white, 0.15),
+            buttonSecondaryBackgroundInversePressed: (0, _color.applyAlpha)(e.white, 0.15),
+            textButtonPrimary: e.white,
+            textButtonPrimaryInverse: e.white,
+            textButtonPrimaryInversePressed: e.white,
+            textButtonSecondary: e.grey2,
+            textButtonSecondaryPressed: e.grey2,
+            textButtonSecondaryInverse: e.grey2,
+            textButtonSecondaryInversePressed: e.grey2,
+            textLink: e.purple30,
+            textLinkInverse: e.purple30,
+            textLinkDanger: e.chili,
+            textLinkSnackbar: e.blue30,
+            textActivated: e.blue30,
+            textBrand: e.blue30,
+            inputBorder: e.grey4,
+            inputBorderInverse: e.grey4,
+            completedStep: e.blue,
+            completedStepInverse: e.blue,
+            control: e.grey4,
+            controlActivated: e.blue,
+            controlInverse: e.grey4,
+            controlActivatedInverse: e.darkModeBlue,
+            controlError: e.tomato55,
+            barTrack: e.darkModeGrey6,
+            barTrackInverse: e.darkModeGrey6,
+            loadingBar: e.darkModeBlue,
+            loadingBarBackground: e.darkModeGrey6,
+            toggleAndroidInactive: e.grey2,
+            toggleAndroidBackgroundActive: e.blue15,
+            iosControlKnob: e.grey3,
+            controlKnobInverse: e.grey3,
+            badge: e.tomato65,
+            feedbackErrorBackground: e.tomato60,
+            feedbackInfoBackground: e.darkModeGrey6,
+            divider: (0, _color.applyAlpha)(e.white, 0.1),
+            dividerInverse: (0, _color.applyAlpha)(e.white, 0.1),
+            navigationBarDivider: e.darkModeBlack,
+            brand: e.blue15,
+            brandHigh: (0, _color.applyAlpha)(e.white, 0.05),
+            inverse: e.grey3,
+            neutralHigh: e.grey3,
+            neutralMedium: e.grey6,
+            neutralMediumInverse: e.grey6,
+            neutralLow: e.grey6,
+            neutralLowAlternative: e.grey6,
+            textPrimary: e.grey3,
+            textPrimaryInverse: e.grey3,
+            textSecondary: e.grey4,
+            textSecondaryInverse: e.grey4,
+            success: e.grass,
+            warning: e.peach,
+            error: e.chili,
+            textError: e.chili,
+            textErrorInverse: e.chili,
+            promo: e.purple,
+            highlight: e.teal,
+            successLow: e.darkModeGrey6,
+            warningLow: e.darkModeGrey6,
+            errorLow: e.darkModeGrey6,
+            promoLow: e.darkModeGrey6,
+            brandLow: e.darkModeGrey6,
+            successHigh: e.grass70,
+            warningHigh: e.peach75,
+            errorHigh: e.tomato60,
+            promoHigh: e.purple55,
+            successHighInverse: e.grass75,
+            warningHighInverse: e.peach75,
+            errorHighInverse: e.tomato60,
+            promoHighInverse: e.purple55,
+            textNavigationBarPrimary: e.grey3,
+            textNavigationBarSecondary: e.grey4,
+            textNavigationSearchBarHint: e.grey4,
+            textNavigationSearchBarText: e.grey3,
+            textAppBar: e.grey4,
+            textAppBarSelected: e.blue15,
+            customTabsBackground: e.darkModeBlack,
+            tagTextPromo: e.blush,
+            tagTextActive: e.blue30,
+            tagTextInactive: e.grey3,
+            tagTextInfo: e.purple30,
+            tagTextSuccess: e.grass,
+            tagTextWarning: e.peach,
+            tagTextError: e.chili,
+            tagBackgroundPromo: e.darkModeGrey6,
+            tagBackgroundActive: e.darkModeGrey6,
+            tagBackgroundInactive: e.darkModeGrey6,
+            tagBackgroundInfo: e.darkModeGrey6,
+            tagBackgroundSuccess: e.darkModeGrey6,
+            tagBackgroundWarning: e.darkModeGrey6,
+            tagBackgroundError: e.darkModeGrey6,
+            tagTextPromoInverse: e.blush,
+            tagTextActiveInverse: e.blue30,
+            tagTextInactiveInverse: e.grey3,
+            tagTextInfoInverse: e.blue30,
+            tagTextSuccessInverse: e.grass,
+            tagTextWarningInverse: e.peach,
+            tagTextErrorInverse: e.chili,
+            tagBackgroundPromoInverse: e.darkModeGrey6,
+            tagBackgroundActiveInverse: e.darkModeGrey6,
+            tagBackgroundInactiveInverse: e.darkModeGrey6,
+            tagBackgroundInfoInverse: e.darkModeGrey6,
+            tagBackgroundSuccessInverse: e.darkModeGrey6,
+            tagBackgroundWarningInverse: e.darkModeGrey6,
+            tagBackgroundErrorInverse: e.darkModeGrey6,
+            cardContentOverlay: `linear-gradient(180deg, ${(0, _color.applyAlpha)(e.black, 0)} 0%, ${(0, _color.applyAlpha)(e.black, 0.4)} 30%, ${(0, _color.applyAlpha)(e.black, 0.7)} 100%)`
+        },
+        borderRadii: {
+            avatar: "50%",
+            bar: "999px",
+            button: "999px",
+            checkbox: "4px",
+            container: "20px",
+            indicator: "8px",
+            input: "16px",
+            legacyDisplay: "20px",
+            popup: "16px",
+            sheet: "16px",
+            mediaSmall: "8px"
+        },
+        textPresets: {
+            button: {
+                weight: "medium"
+            },
+            cardTitle: {
+                weight: "medium"
+            },
+            indicator: {
+                weight: "medium"
+            },
+            link: {
+                weight: "medium"
+            },
+            navigationBar: {
+                weight: "medium"
+            },
+            tabsLabel: {
+                lineHeight: {
+                    desktop: 24,
+                    mobile: 24
+                },
+                size: {
+                    desktop: 18,
+                    mobile: 16
+                },
+                weight: "medium"
+            },
+            text1: {
+                lineHeight: {
+                    desktop: 20,
+                    mobile: 16
+                },
+                size: {
+                    desktop: 14,
+                    mobile: 12
+                }
+            },
+            text2: {
+                lineHeight: {
+                    desktop: 24,
+                    mobile: 20
+                },
+                size: {
+                    desktop: 16,
+                    mobile: 14
+                }
+            },
+            text3: {
+                lineHeight: {
+                    desktop: 24,
+                    mobile: 24
+                },
+                size: {
+                    desktop: 18,
+                    mobile: 16
+                }
+            },
+            text4: {
+                lineHeight: {
+                    desktop: 28,
+                    mobile: 24
+                },
+                size: {
+                    desktop: 20,
+                    mobile: 18
+                }
+            },
+            text5: {
+                lineHeight: {
+                    desktop: 32,
+                    mobile: 24
+                },
+                size: {
+                    desktop: 28,
+                    mobile: 20
+                },
+                weight: "bold"
+            },
+            text6: {
+                lineHeight: {
+                    desktop: 40,
+                    mobile: 32
+                },
+                size: {
+                    desktop: 32,
+                    mobile: 24
+                },
+                weight: "bold"
+            },
+            text7: {
+                lineHeight: {
+                    desktop: 48,
+                    mobile: 32
+                },
+                size: {
+                    desktop: 40,
+                    mobile: 28
+                },
+                weight: "bold"
+            },
+            text8: {
+                lineHeight: {
+                    desktop: 56,
+                    mobile: 40
+                },
+                size: {
+                    desktop: 48,
+                    mobile: 32
+                },
+                weight: "bold"
+            },
+            text9: {
+                lineHeight: {
+                    desktop: 64,
+                    mobile: 48
+                },
+                size: {
+                    desktop: 56,
+                    mobile: 40
+                },
+                weight: "bold"
+            },
+            text10: {
+                lineHeight: {
+                    desktop: 72,
+                    mobile: 56
+                },
+                size: {
+                    desktop: 64,
+                    mobile: 48
+                },
+                weight: "bold"
+            },
+            title1: {
+                weight: "medium"
+            },
+            title2: {
+                weight: "bold"
+            },
+            title3: {
+                lineHeight: {
+                    desktop: 32,
+                    mobile: 24
+                },
+                size: {
+                    desktop: 28,
+                    mobile: 20
+                },
+                weight: "bold"
+            }
+        },
+        themeVariants: {
+            successFeedback: "inverse",
+            brandLoadingScreen: "inverse"
+        }
+    });

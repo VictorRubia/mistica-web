@@ -1,0 +1,102 @@
+"use client";
+function _define_property(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, {
+            value: value,
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+    } else {
+        obj[key] = value;
+    }
+    return obj;
+}
+function _object_spread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        var ownKeys = Object.keys(source);
+        if (typeof Object.getOwnPropertySymbols === "function") {
+            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+            }));
+        }
+        ownKeys.forEach(function(key) {
+            _define_property(target, key, source[key]);
+        });
+    }
+    return target;
+}
+function ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        if (enumerableOnly) {
+            symbols = symbols.filter(function(sym) {
+                return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+            });
+        }
+        keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function _object_spread_props(target, source) {
+    source = source != null ? source : {};
+    if (Object.getOwnPropertyDescriptors) {
+        Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+        ownKeys(Object(source)).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+function _object_without_properties(source, excluded) {
+    if (source == null) return {};
+    var target = _object_without_properties_loose(source, excluded);
+    var key, i;
+    if (Object.getOwnPropertySymbols) {
+        var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+        for(i = 0; i < sourceSymbolKeys.length; i++){
+            key = sourceSymbolKeys[i];
+            if (excluded.indexOf(key) >= 0) continue;
+            if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+            target[key] = source[key];
+        }
+    }
+    return target;
+}
+function _object_without_properties_loose(source, excluded) {
+    if (source == null) return {};
+    var target = {};
+    var sourceKeys = Object.keys(source);
+    var key, i;
+    for(i = 0; i < sourceKeys.length; i++){
+        key = sourceKeys[i];
+        if (excluded.indexOf(key) >= 0) continue;
+        target[key] = source[key];
+    }
+    return target;
+}
+import { jsx as l } from "react/jsx-runtime";
+import { useIsInverseOrMediaVariant as n } from "../../theme-variant-context.js";
+import { vars as r } from "../../skins/skin-contract.css-mistica.js";
+const t = (_param)=>{
+    var { color: a, size: c = 24 } = _param, o = _object_without_properties(_param, [
+        "color",
+        "size"
+    ]);
+    const e = n(), s = a !== null && a !== void 0 ? a : e ? r.colors.inverse : r.colors.neutralHigh;
+    return /* @__PURE__ */ l("svg", _object_spread_props(_object_spread({
+        width: c,
+        height: c,
+        viewBox: "0 0 24 24",
+        role: "presentation"
+    }, o), {
+        children: /* @__PURE__ */ l("path", {
+            fill: s,
+            d: "M18.143 8.1c.345.386 2.85 3.307 3.437 6.778.465 2.748.314 4.345-.495 5.18a1.96 1.96 0 0 1-1.346.552l-.063.002c-1.035 0-1.675-.544-2.029-.844l-.005-.005-.078-.067c-.297-.25-.379-.317-.718-.317h-.005c-.39 0-1.474-.09-1.644-.137-1.06-.277-1.645-1.12-1.645-2.372-.03-.695-.086-2.115-.112-3.577l-1.453-.734-1.43.72a140 140 0 0 1-.111 3.56c0 1.238-.586 2.081-1.65 2.361-.162.045-1.238.137-1.647.135-.336 0-.417.067-.717.316l-.079.067-.005.005c-.354.3-.994.844-2.028.844q-.064 0-.132-.003a1.96 1.96 0 0 1-1.274-.549c-.81-.832-.964-2.428-.499-5.179.588-3.473 3.093-6.392 3.437-6.782.499-.756 1.193-1.123 2.12-1.123 1.454 0 1.99.832 2.18 1.367.087.168.162.37.24.642v.002c.065.225.107.608.135 1.09l.034-.017V4.332a.94.94 0 0 1 .93-.947h1.014a.94.94 0 0 1 .93.947v5.697l.033.017c.025-.468.07-.84.132-1.059.076-.266.154-.473.24-.644.194-.535.73-1.367 2.183-1.367.927 0 1.622.367 2.12 1.123m-7.574 3.957 1.177-.594a.52.52 0 0 1 .473 0l1.202.608q.001-.428.005-.832l-.762-.386a.55.55 0 0 1-.297-.488V4.472h-.739v5.88a.55.55 0 0 1-.297.487l-.768.386q.008.405.006.832m9.64 7.117.004-.005c.325-.333.62-1.319.149-4.078-.555-3.277-3.137-6.151-3.163-6.18a1 1 0 0 1-.064-.083c-.272-.423-.594-.597-1.118-.597-.843 0-.974.395-1.03.566q-.019.054-.045.103a2.4 2.4 0 0 0-.16.435c-.199.7-.143 4.372-.006 7.487.003.9.37 1.11.729 1.204.08.012.95.096 1.327.096h.009c.781 0 1.148.305 1.501.602l.09.076c.322.274.692.588 1.322.554.258-.01.423-.154.454-.18M9.212 16.822c.14-3.157.196-6.83 0-7.532a2.3 2.3 0 0 0-.16-.432.6.6 0 0 1-.047-.109v-.002c-.057-.17-.188-.564-1.03-.564-.525 0-.85.174-1.118.597a1 1 0 0 1-.065.084c-.028.03-2.608 2.905-3.162 6.182-.465 2.762-.171 3.745.157 4.084l.005.004c.03.026.194.165.448.175.638.034 1.002-.279 1.321-.553l.002-.001.09-.076c.352-.297.72-.602 1.498-.602h.008c.381 0 1.247-.084 1.367-.104.32-.084.686-.297.686-1.151"
+        })
+    }));
+}, m = t;
+export { m as default };

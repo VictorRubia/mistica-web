@@ -1,0 +1,17 @@
+export declare const DEFAULT_WIDTH = 328;
+export declare const LABEL_SCALE_DESKTOP = 0.78;
+export declare const LABEL_SCALE_MOBILE = 0.75;
+export declare const labelContainer: string;
+export declare const labelText: string;
+export declare const shrinked: string;
+export declare const fieldContainer: string;
+export declare const disabled: string;
+export declare const normalWidth: string;
+export declare const fullWidth: string;
+export declare const field: string;
+export declare const helperContainer: string;
+export declare const leftHelperText: string;
+export declare const rightHelperText: string;
+export declare const helperText: string;
+export declare const warnIcon: string;
+export declare const background: Record<"default" | "readOnly", string>;
